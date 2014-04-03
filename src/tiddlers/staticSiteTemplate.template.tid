@@ -1,0 +1,8 @@
+title: staticSiteTemplate
+type: text/vnd.tiddlywiki-html
+
+{{headerPreTitle}}
+<$view field="pageTitle" format="text" />
+{{headerPostTitle}}
+<$view field="text" format="html" />
+{{footer}}

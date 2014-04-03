@@ -1,0 +1,404 @@
+title: index
+pageTitle: CTRLio - Save. Make. Do.
+type: text/vnd.tiddlywiki-html
+tags: static
+
+<section id="header" class="dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <!-- <a class="headerLink" href="http://twitter.com/ctrlio"><img src="images/twitter-logo.svg">Follow us on Twitter</a> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="logo">
+          	<img src="images/logo.svg">
+            <h1>CTRLio. Save.Make.Do.</h1>
+          </div>
+        </div>
+        <div class="triple">
+          <div class="row">
+            <div class="col-sm-4">
+              <h2 class="subheader green">For people</h2>
+              <p>save money, make better decisions and do more in life when you take control of your personal information.</p>
+              <a href="#for-people" class="visible-xs chevron" alt="For people"><img src="images/chevron-white.svg"></a>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="subheader pink">For brands</h2>
+              <p>save on marketing costs, make more personalised offers and do more to engage your customers directly.</p>
+              <a href="#for-brands" class="visible-xs chevron" alt="For brands"><img src="images/chevron-white.svg"></a>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="subheader orange">For developers</h2>
+              <p>save time, make better apps and do more with consent-based access to detailed, personal profiles.</p>
+              <a href="#for-developers" class="visible-xs chevron" alt="For developers"><img src="images/chevron-white.svg"></a>
+            </div>
+          </div>
+          <div class="row hidden-xs">
+            <div class="col-sm-4"><a href="#for-people" class="chevron" alt="For people"><img src="images/chevron-white.svg"></a></div>
+            <div class="col-sm-4"><a href="#for-brands" class="chevron" alt="For brands"><img src="images/chevron-white.svg"></a></div>
+            <div class="col-sm-4"><a href="#for-developers" class="chevron" alt="For developers"><img src="images/chevron-white.svg"></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="navbar navbar-default navbar-absolute">
+      <div class="container">
+    	  <div class="navbar-header">
+    	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    	      <span class="sr-only">Toggle navigation</span>
+    	      <span class="icon-bar"></span>
+    	      <span class="icon-bar"></span>
+    	      <span class="icon-bar"></span>
+    	    </button>
+    	    <a class="navbar-brand" href="/">CTRLio</a>
+    	  </div>
+    	  <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+    	    <ul class="nav navbar-nav">
+    	      <li><a href="#header">Home</a></li>
+    	      <li><a href="#for-people">For people</a></li>
+    	      <li><a href="#for-brands">For brands</a></li>
+    	      <li><a href="#for-developers">For developers</a></li>
+    	      <li><a href="#how-it-works">How it works</a></li>
+    	      <li><a href="#about-us">About us</a></li>
+    	      <li><a href="#news">News</a></li>
+    	      <li><a href="#contact">Contact</a></li>
+    	    </ul>  
+    	  </div>
+      </div>
+  	</nav>
+    <section id="for-people">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-sm-push-7">
+            <img class="center-block" src="images/for-people.jpg" alt="">
+          </div>
+          <div class="col-sm-7 col-sm-pull-5">
+            <h1 class="green">For People</h1>
+      			<div class="row">
+      				<div class="col-sm-12">
+	            	<p class="standfirst darkBlue">Hello. We are CTRLio. Our purpose is simple. We want to help you save money, make better decisions and do more in life when you take control of your personal information. Our shorthand is Save.Make.Do.</p>
+	            </div>
+	            <div class="col-sm-10">
+		            <p>We do this by giving you tools to manage and use your own personal information. For example, we can cut the confusion when looking for your next mobile phone deal. Our tools will help you gather your usage and location records, calculate what you need, identify the best networks in your most frequently visited areas and invite suppliers to make you personalised offers. This is just one example of how you can benefit - the  opportunities are endless when you take control of your personal information.</p>
+      				</div>
+      			</div>
+          </div>
+        </div><!-- end of row -->
+        <div class="triple">
+          <div class="row">
+            <div class="col-sm-4">
+              <h2 class="subheader green">Save</h2>
+              <p>Save money by getting brands to make you personalised offers</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="subheader green">Make</h2>
+              <p>Make better decisions when you have all the relevant information at your finger tips</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="subheader green">Do</h2>
+              <p>Do more in life when you take control of your personal information</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of container -->      
+      <a href="#" class="chevron section-navigator" alt="Next section"><img src="images/chevron-blue.svg"></a>
+    </section>
+    <section id="for-brands" class="dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <img class="center-block" src="images/for-brands.jpg" alt="">
+          </div>
+          <div class="col-sm-7">
+            <h1 class="pink">For Brands</h1>
+      			<div class="row">
+      				<div class="col-sm-12">
+	            	<p class="standfirst white">We help people tell you who they are, what they want and when they want it. You get better access to better data and will see huge performance and engagement uplift.</p>
+	            </div>
+	            <div class="col-sm-10">
+		            <p>CTRLio has developed a unique solution which will enable you to respond to direct requests for products and services. Our tools interface with the systems you already use, allowing you to dynamically respond with competitive and personalised offers. CTRLio is also helping people to connect with real-time marketing systems on a global scale, so you will know when it is appropriate to talk to them and what the right message will be. The time for consent-based, one-to-one marketing has arrived.</p>
+      				</div>
+      			</div>
+          </div>
+        </div><!-- end of row -->
+        <div class="triple">
+          <div class="row">
+            <div class="col-sm-4">
+              <h2 class="subheader pink">Save</h2>
+              <p>Save on marketing costs by responding to qualified, informed, consent-based leads</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="subheader pink">Make</h2>
+              <p>Make more personalised offers that will perform better</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="subheader pink">Do</h2>
+              <p>Do more to engage your customers directly</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="chevron section-navigator" alt="Next section"><img src="images/chevron-white.svg"></a>
+    </section>
+    <section id="for-developers">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-sm-push-7">
+            <img class="center-block" src="images/for-developers.jpg" alt="">
+          </div> 
+          <div class="col-sm-7 col-sm-pull-5">
+            <h1 class="orange">For Developers</h1>
+      			<div class="row">
+      				<div class="col-sm-12">
+	            	<p class="standfirst darkBlue">Be the first to build a new generation of applications that benefit from consent-based access to people's detailed personal data records.</p>
+	            </div>
+	            <div class="col-sm-10">
+		            <p>You can use CTRLio's open APIs and file formats to build innovative applications that use and enhance personal information. Mash up locations with calendars, interests with purchase histories, messages with contacts to reveal highly personal and relevant insights. You will be able to create apps that were never possible before. Let CTRLio help you distribute your apps to a global audience.</p>
+      				</div>
+      			</div>
+          </div>
+        </div><!-- end of row -->
+        <div class="triple">
+          <div class="row">
+            <div class="col-sm-4">
+              <h2 class="subheader orange">Save</h2>
+              <p>Save time by building on CTRLio's rich, open source toolkit</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="subheader orange">Make</h2>
+              <p>Make and share better, more personalised experiences</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="subheader orange">Do</h2>
+              <p>Do more with consent-based access to detailed, personal profiles</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of container -->
+      <a href="#" class="chevron section-navigator" alt="Next section"><img src="images/chevron-blue.svg"></a>
+    </section>
+    <section id="how-it-works" class="dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <h1 class="white">How it works</h1>
+            <p class="standfirst">Securely and anonymously share your data with brands to receive deals tailored to you.</p>
+          </div>
+        </div>
+        <div class="double">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2 class="green underline">People</h2>
+              <div class="row">
+                <div class="col-xs-4 hidden-xs">
+                  <div class="spot"><h2>1</h2></div>              
+                </div>
+                <div class="col-xs-8">
+                  <h3 class="green">Collect your data with CTRLio tools</h3>
+                  <p>Create your own secure Personal Information Organiser</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 visible-xs">
+              <div class="row">
+                <div class="col-xs-4 hidden-xs">
+                  <div class="spot"><h2>2</h2></div>              
+                </div>
+                <div class="col-xs-8">
+                  <h3 class="green">Make comparisons and visualise trends</h3>
+                  <p>Understand what your data means</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 visible-xs">
+              <div class="row">
+                <div class="col-xs-4 hidden-xs">
+                  <div class="spot"><h2>3</h2></div>              
+                </div>
+                <div class="col-xs-8">
+                  <h3 class="green">Receive deals tailored to you</h3>
+				<p>Share safely just the parts of your data that you want in order to get personalised offers for the things you need, when you need them.</p>
+                </div>
+              </div>
+            </div>
+              
+              
+            <div class="col-sm-6">
+	            	<h2 class="orange underline">Brands</h2>
+              <div class="row">
+                <div class="col-xs-4 hidden-xs">
+                  <div class="spot"><h2>4</h2></div>              
+                </div>
+                <div class="col-xs-8">
+                	<h3 class="orange">Subscribe to peoples&rsquo; signals</h3>
+                	<p>Receive the data they choose to share so that you can provide a personalised experience</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- end row -->
+        </div><!-- end .double -->
+        <div class="double">
+          <div class="row">
+            <div class="col-sm-6 hidden-xs">
+              <div class="row">
+                <div class="col-xs-4 hidden-xs">
+                  <div class="spot"><h2>2</h2></div>              
+                </div>
+                <div class="col-xs-8">
+                  <h3 class="green">Make comparisons and visualise trends</h3>
+                  <p>Understand what your data means</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-xs-4 hidden-xs">
+                  <div class="spot"><h2>5</h2></div>              
+                </div>
+                <div class="col-xs-8">
+                	<h3 class="orange">Bid against other brands for customers</h3>
+                  <p>Make the best offers based on the rich personal profiles you can see</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="double">
+          <div class="row">
+            <div class="col-sm-6 hidden-xs">
+              <div class="row">
+                <div class="col-xs-4 hidden-xs">
+                  <div class="spot"><h2>3</h2></div>              
+                </div>
+                <div class="col-xs-8">
+                  <h3 class="green">Receive deals tailored to you</h3>
+				<p>Share safely just the parts of your data that you want in order to get personalised offers for the things you need, when you need them.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-xs-4 hidden-xs">
+                  <div class="spot"><h2>6</h2></div>              
+                </div>
+                <div class="col-xs-8">
+                  <h3 class="orange">Engage with customers that accept your offers</h3>
+                  <p>Enter a data partnership with your customers, feed their Personal Information Organisers with relevant data</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end .container --> 
+      <a href="#" class="chevron section-navigator" alt="Next section"><img src="images/chevron-white.svg"></a>
+    </section>
+    <section id="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="green">About us</h1>
+          </div>
+        </div>
+        <div class="row"> 
+          <div class="col-sm-8">
+            <p class="standfirst">We believe in a world where millions of people will benefit from controlling and using their personal information. This will radically change relationships with brands and services and commerce will blossom. CTRLio was set up to build the tools and platform to make this happen on a global scale.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 class="green underline">Core beliefs</h2>
+            <p>We believe people should control their personal data, which includes deciding where they store it and what they<br> do with it.</p>
+            <p>We believe informed people make better customers.</p>
+            <p>We believe people will gain way more when they use their personal information than if they were to sell it.</p>
+            <p>We believe customer control of personal data is <br>the new 'opt-in'.</p>
+            <p>We believe trust, privacy and security are really important when it comes to personal data but they are not enough. That is why we invented CTRLzone&trade;.</p>
+          </div>
+          <div class="col-sm-6">
+            <h2 class="green underline">CTRLzone&trade;</h2>
+            <p>The problem with data is that once it is shared, you can't 'un-share' it easily. It is very simple to copy. That is why we developed a mechanism for safe sharing called CTRLzone&trade;. CTRLzone&trade; is a place, where you can let brands see some of your personal information and they can respond with personalised offers. When that work is done, CTRLzone&trade; evaporates - which means the only person that ever keeps your information - is you.</p>
+            <h2 class="green underline">How we make money</h2>
+        	</div>
+          <div class="col-sm-6">
+            <p>CTRLio is free for individual people to use. Our primary objective is to help people discover what is best for them. We do charge brands for using CTRLio but not at the expense of compromising our primary objective.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="chevron section-navigator" alt="Next section"><img src="images/chevron-blue.svg"></a>
+    </section>
+    <section id="news" class="dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <h1 class="newsSectionHeader underline white">Our news</h1>
+            <div class="row">
+              <article>
+                <div class="col-sm-12">
+                  <h2 class="newsHeader orange"><a class="orange" href="/ctrlio-newsletter-jan-feb-2014-growing.html">CTRLio Newsletter Jan/Feb 2014 - Growing</a></h2>
+                </div>
+                <div class="col-sm-10">
+                  <p>January and February have been very busy months for CTRLio (which is our excuse for not sending out a newsletter last month!).</p>
+                  <a class="readMore orange" href="/ctrlio-newsletter-jan-feb-2014-growing.html">Read more</a>
+                </div>
+              </article>
+              <article>
+                <div class="col-sm-12">
+                  <h2 class="newsHeader orange"><a class="orange" href="/ctrlio-newsletter-december-new-years-resolutions.html">CTRLio Newsletter December - New Year's Resolutions</a></h2>
+                </div>
+                <div class="col-sm-10">
+                  <p>2013 has been huge for us. CTRLio has developed from an audacious idea into a focussed start-up, with solid funding and clear plans for the New Year.</p>
+                  <a class="readMore orange" href="/ctrlio-newsletter-december-new-years-resolutions.html">Read more</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <h1 class="newsSectionHeader underline white">What people are saying about us</h1>
+            <h3 class="whatPeopleSay orange whatPeopleSaySpacer"><a class="orange" href="https://www.ctrl-shift.co.uk/news/2013/10/04/ctrlio-is-helping-consumers-manage-their-personal-data-assets" title="CTRLio is helping consumers manage their personal data assets - on Ctrl-Shift website" target="_blank">Ctrl Shift</a></h3>
+            <p><a class="white" href="https://www.ctrl-shift.co.uk/news/2013/10/04/ctrlio-is-helping-consumers-manage-their-personal-data-assets" title="CTRLio is helping consumers manage their personal data assets - on Ctrl-Shift website" target="_blank">CTRLio is helping consumers manage their personal data assets</a></p>
+            <h3 class="whatPeopleSay orange"><a class="orange" href="http://www.seedcamp.com/companies/ctrlio" title="CTRLio on the SeedCamp website" target="_blank">Seedcamp</a></h3>
+            <p><a class="white" href="http://www.seedcamp.com/companies/ctrlio" title="CTRLio on the SeedCamp website" target="_blank">CTRLio helps consumers control and benefit from their personal data. We were excited by the experienced team and audacious promise of taking back control of our own data</a></p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="chevron section-navigator" alt="Next section"><img src="images/chevron-white.svg"></a>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1 class="darkBlue">Contact Us</h1>
+            <p class="standfirst">Together, we can change the way huge industries work, respecting the data right of individuals and massively improving the efficiencies of companies. We are well on our way but would love to hear from you if you want to help us on the journey.</p>
+          </div>
+        </div>
+        <div class="double">
+          <div class="row">
+            <div class="col-sm-5">
+              <h2 class="underline pink">Jobs</h2>
+              <p>Join our world class development team. We currently have openings for JavaScript developers at our London base in Clerkenwell.</p>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1">
+              <h2 class="underline orange">People</h2>
+              <p>Help us test our service while we are in closed beta? Get in touch.</p>
+            </div>
+          </div><!-- end row -->
+        </div><!-- end .double -->
+        <div class="double">
+          <div class="row">
+            <div class="col-sm-5">
+              <h2 class="underline darkBlue">Brands</h2>
+              <p>Join one of our trials and be amongst the first in your sector to enter a new data partnership with customers.</p>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1">
+              <h2 class="underline green">Developers</h2>
+              <p>Join our developer community to create apps that benefit from access to rich customer profiles.</p>
+            </div>
+          </div>            
+            <p><br><a href="mailto:contact@ctrlio.com">contact@ctrlio.com</a>
+          </div>
+        </div>
+      </div><!-- end .container --> 
+    </section>
+    <script src="javascripts/main.js"></script>

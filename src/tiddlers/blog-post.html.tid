@@ -1,0 +1,25 @@
+title: blog-post
+pageTitle: Blog Article Title
+type: text/vnd.tiddlywiki-html
+tags: static
+
+    <div class="container">
+      <section class="blogArticle">
+        <div class="row">
+      		<h1 class="lightGrey">Blog Article Title</h1>
+      		<nav>
+        		<a href="/" title="Back to the main page">back to site</a>
+      		</nav>
+	      	<h2 class="darkBlue">Blog Standfirst: We believe Customer Relationship Management must evolve from customers viewed as members of a segment or as targets to customers treated as partners.</h2>
+	      	<div class="col-sm-6 col-sm-offset-3">
+    				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    				<hr>
+    				<nav>
+          		<a href="/" title="Back to the main page">back to site</a>
+        		</nav>
+    			</div>
+        </div>
+      </section>
+    </div>

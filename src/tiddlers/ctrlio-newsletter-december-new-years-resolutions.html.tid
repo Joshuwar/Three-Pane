@@ -1,0 +1,55 @@
+title: ctrlio-newsletter-december-new-years-resolutions
+pageTitle: CTRLio Newsletter December - New Year's Resolutions
+type: text/vnd.tiddlywiki-html
+tags: static
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		      <span class="sr-only">Toggle navigation</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="/">CTRLio</a>
+		  </div>
+		  <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav">
+		      <li><a href="/#header">Home</a></li>
+		      <li><a href="/#for-people">For people</a></li>
+		      <li><a href="/#for-brands">For brands</a></li>
+		      <li><a href="/#for-developers">For developers</a></li>
+		      <li><a href="/#how-it-works">How it works</a></li>
+		      <li><a href="/#about-us">About us</a></li>
+		      <li><a href="/#news">News</a></li>
+		      <li><a href="/#contact">Contact</a></li>
+		    </ul>  
+		  </div>
+	</div>
+	</nav>
+
+    <div class="container">
+      <section class="blogArticle">
+        <div class="row">
+      		<h1 class="lightGrey">CTRLio Newsletter December - New Year's Resolutions - Dec 31, 2013</h1>
+	      	<h2 class="darkBlue">2013 has been huge for us. CTRLio has developed from an audacious idea into a focussed start-up, with solid funding and clear plans for the New Year.</h2>
+	      	<div class="col-sm-6 col-sm-offset-3">
+            <p>2014 is going to be exciting for us, for personalisation and the personal data agenda.</p>
+            <p>Our Minimum Viable Product, the iPhone Backup Collector that enables customers to regain a first set of personal data and use it to get the perfect mobile tariff, is being tested and refined. Let me know if you would like to try it out and give us some feedback. Next step on the product roadmap is to implement our unique architectural approach to enable the safe 'lending' of personal data extracts with 3rd parties - which is the key to scaling into a very large business.</p>
+            <p>Our fundraising, too, has been very successful, with over &pound;300k committed to the current round from engaged and supportive investors. This will give us the financial security to get to our next product and commercial goals.</p>
+            <p>So as 2013 draws to a close, what have we learnt and what will we resolve to do differently next year?</p>
+            <ol>
+              <li>Telling the right story to different audiences is key. It is very tempting, when you have a big idea, to try to explain all the different possibilities to anyone who will listen, but in reality, simple, clear messaging wins every time. We now know that our proposition is about the use of your personal data to save time and money for the majority of consumers; investors are interested in the impact we can have on major markets; and partners want more effective ways of attracting and retaining customers.</li>
+              <li>Focus on the product development front is also critical. We held off building any product for as long as possible so that we could be sure to build the right things first. Now that development is under way, we need to make sure we still keep that discipline of ruthless focus, so that we do not get distracted and delayed by 'nice-to-have' features.</li>
+              <li>Coffee shops and co-working spaces are great but no substitute for your own place. Now that we have engaged in agile product development, we need the whole team to sit close together, so we are going to find some 'affordable' space early in the New Year.</li>
+            </ol>
+            <p>But there are some things we aren't planning to change. One is staying in touch with friends and supporters and another is keeping our ambitions high. We hope you have enjoyed the last year as much as we have and wish you all the best for 2014.</p>
+    				<hr>
+    				<nav>
+          		<a href="/" title="Back to the main page">back to site</a>
+        		</nav>
+    			</div>
+        </div>
+      </section>
+    </div>

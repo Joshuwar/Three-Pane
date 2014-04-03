@@ -30,14 +30,14 @@ jQuery(document).ready(function($) {
 
 	slideposition = function(slidepos) {
 		$('#' + slidepos).click(function() {
-			$(this).parents('.wrap')addClass('slidePos-' + slidepos);
+			$(this).parents('.wrap').addClass('slidePos-' + slidepos);
 		})
 	};
 
 	// get the id of the link clicked and send it to slideposition func
 
 	$('a').click(function() {
-		slideposition($(this).id());
+		slideposition(this.id);
 	});
 	
 

@@ -167,9 +167,10 @@ footer {
 		li {
 			float: left;
 			list-style: none;
+			padding: 6px 10px 4px;
 			a {
-				padding: 6px 10px 4px;
-				display: block;
+				// padding: 6px 10px 4px;
+				// display: block;
 			}
 		}
 	}
@@ -229,11 +230,11 @@ footer {
 		width: calc(100% - 30px);
 	}
 	section.notificationsPane {
-		right: calc(-33.3% + 20px);
+		right: calc(-33.3%);
 		width: calc(100% / 3 + 10px);
 	}
 	section.lifePane {
-		right: calc(-33.3% + 10px);
+		right: calc(-33.3% - 10px);
 		width: calc(100% / 3 + 10px);
 	}
 }

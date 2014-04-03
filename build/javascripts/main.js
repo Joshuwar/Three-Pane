@@ -26,6 +26,6 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 jQuery(document).ready(function($) {
 	$('.handleBar').click(function() {
 		console.log("boo");
-		$(this).parents('.wrap').addClass('slidePos-011');
+		$(this).parents('.wrap').addClass('slidePos-000');
 	});
 });

@@ -190,6 +190,7 @@ footer {
 
 .containerWrap {
 	height: 100%;
+	transition: opacity 0.5s ease;
 }
 
 .slidePos-110 {
@@ -266,9 +267,8 @@ footer {
 		width: calc(100% / 3 - 10px);
 	}
 	section.notificationsPane {
-		right: calc(50% - #{$handlebarwidth}); // cannot interpolate variables at the moment - waiting for SASS fix
-		width: calc(50% - $handlebarwidth);
-		margin-top: #{$handlebarwidth};
+		right: calc(50% - 10px); // cannot interpolate variables at the moment - waiting for SASS fix
+		width: calc(50% - 10px);
 	}
 	section.lifePane {
 		right: calc(0% - 20px); // cannot interpolate variables at the moment - waiting for SASS fix
@@ -278,13 +278,18 @@ footer {
 
 .slidePos-000 {
 	section.pioPane {
-		width: calc(0% + 10px);
+		width: calc(0%);
 		right: calc(100% + 10px);
 	}
 	section.notificationsPane {
-		right: calc(66.6666% - 10px); // cannot interpolate variables at the moment - waiting for SASS fix
+		width: calc(0%);
+		right: calc(100% - 10px); // cannot interpolate variables at the moment - waiting for SASS fix
 	}
 	section.lifePane {
-		right: calc(66.6666% - 20px); // cannot interpolate variables at the moment - waiting for SASS fix
+		width: calc(0%);
+		right: calc(100% - 20px); // cannot interpolate variables at the moment - waiting for SASS fix
+	}
+	.containerWrap {
+		opacity: 0;
 	}
 }

@@ -195,62 +195,68 @@ footer {
 
 .slidePos-110 {
 	section.pioPane {
-		width: calc(50% - 10px);
 		right: 50%;
+		width: calc(50% - 10px);
 	}
 	section.notificationsPane {
-		width: 50%;
-		right: 0%;	
+		right: 0%;
+		width: 50%;	
 	}
 	section.lifePane {
-		right: calc(-33.3% + 10px);
+		right: calc(-100% / 3 + 10px);
+		width: calc(100% / 3 - 10px);
 	}
 }
 
 .slidePos-101 {
 	section.pioPane {
-		width: calc(50% - 10px);
 		right: 50%;
+		width: calc(50% - 10px);
 	}
 	section.notificationsPane {
-		width: 10px;
 		right: 50%;
+		width: 10px;
 	}
 	section.lifePane {
-		width: 50%;
 		right: 0%;	
+		width: 50%;
 	}
 }
 
 .slidePos-100 {
 	section.pioPane {
-		width: calc(100% - 30px);
 		right: 20px;
+		width: calc(100% - 30px);
 	}
 	section.notificationsPane {
 		right: calc(-33.3% + 20px);
+		width: calc(100% / 3 + 10px);
 	}
 	section.lifePane {
 		right: calc(-33.3% + 10px);
+		width: calc(100% / 3 + 10px);
 	}
 }
 
 .slidePos-010 {
 	section.pioPane {
-
+		width: calc(0%);
+		right: calc(100% - 10px);
 	}
 	section.notificationsPane {
 		width:  calc(100% - 20px);
 		right: 0%; // cannot interpolate variables at the moment - waiting for SASS fix
 	}
 	section.lifePane {
-		right: calc(100% / 3 + 10px); // cannot interpolate variables at the moment - waiting for SASS fix
+		right: calc(-100% / 3); // cannot interpolate variables at the moment - waiting for SASS fix
+		width: calc(100% / 3);
 	}
 }
 
 .slidePos-001 {
 	section.pioPane {
 		width: calc(100% / 3 - 10px);
+		right: calc(100% / 3 * 2);
 	}
 	section.notificationsPane {
 		width: calc(100% / 3 - 10px);
@@ -265,6 +271,7 @@ footer {
 .slidePos-011 {
 	section.pioPane {
 		width: calc(100% / 3 - 10px);
+		right: calc(100% / 3 * 2);
 	}
 	section.notificationsPane {
 		right: calc(50% - 10px); // cannot interpolate variables at the moment - waiting for SASS fix

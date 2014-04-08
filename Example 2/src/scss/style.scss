@@ -95,10 +95,10 @@ h3, h4, h5, h6  { margin: 0 0 0 0; }
 // Link Styles
 
 a 	{ 
-	color: $light-blue; 
+	color: #a1a1a1; 
 	transition: opacity 0.5s ease;
 	&:hover { 
-		color: $dark-blue; text-decoration: none; 
+		color: white; text-decoration: none; 
 		border-bottom-color: $dark-blue;
 	}
 	&.headerLink {
@@ -126,178 +126,129 @@ a 	{
 
 html, body {
   height: 100%;
+  width: 100%;
 }
 
-section {
-	width: calc(100% / 3 - 10px);
-	position: absolute;
-	height:100%;
-	background-color: $off-white;
-	transition: all 0.5s ease;
-	&.pioPane {
-		right: 66.6666%;
-	}
-	&.notificationsPane {
-		right:33.33333%;
-		z-index: 2;
-	}
-	&.lifePane {
-		right: 0;
-		z-index: 3;
-	}
-}
-
-header {
+header { 
 	background-color: $light-grey;
-	position: absolute;
-	top: 0px;
-	width:100%;
-	padding: 6px 15px 4px;
-}
-
-footer {
-	background-color: $light-grey;
-	position: absolute;
-	bottom: 0px;
-	width:100%;
-	padding: 10px 0px;
+	overflow: hidden;
+	height: 35px;
 	nav ul {
-		padding-left:0px;
 		margin: 0;
+		padding: 0;
 		li {
-			float: left;
-			list-style: none;
-			padding: 6px 10px 4px;
+			display: inline-block;
 			a {
-				// padding: 6px 10px 4px;
-				// display: block;
+				padding: 5px 20px 6px;
+				display: block;
 			}
 		}
 	}
 }
 
-.innerWrap {
-	padding: 50px 20px;
-}
-
-.handleBar {
-	height: 100%;
-	background-color: $dark-grey;
-	width: $handlebarwidth;
-	position: absolute;
-	z-index: 10;
-	margin-left: -$handlebarwidth;
-}
-
-.containerWrap {
-	height: 100%;
-	transition: opacity 0.5s ease;
-}
-
-.slidePos-110 {
-	section.pioPane {
-		right: 50%;
-		width: calc(50% - 10px);
-	}
-	section.notificationsPane {
-		right: 0%;
-		width: 50%;	
-	}
-	section.lifePane {
-		right: calc(-100% / 3 + 10px);
-		width: calc(100% / 3 - 10px);
+.viewContainer {
+	overflow:hidden;
+	width: 100%;
+	height: calc(100% - 35px);
+	.slidingPanel {
+		transition: all 0.5s ease;
+		left: 0%;
+		position: relative;
+		width: 300%;
+		height: 100%;
+		.viewPane {
+			overflow-y: scroll;
+			width: calc(100% / 3);
+			float: left;
+			height: 100%;
+			.innerWrap {
+				padding: 10% 30%;
+				height: 150%;	
+			}
+			&.myData 		{ background-color: #eee;}
+			&.toolbox 		{ background-color: #dadada;}
+			&.notifications { background-color: #d3d3d3;}
+		}
 	}
 }
 
-.slidePos-101 {
-	section.pioPane {
-		right: 50%;
-		width: calc(50% - 10px);
+.slidePos-myData {
+	.slidingPanel {
+		left: 0%;
 	}
-	section.notificationsPane {
-		right: 50%;
-		width: 10px;
+	a#myData { 
+		background-color: #555; 
+		color: white;
 	}
-	section.lifePane {
-		right: 0%;	
-		width: 50%;
+}
+.slidePos-toolbox {
+	.slidingPanel {
+		left: -100%;
+	}
+	a#toolbox { 
+		background-color: #555; 
+		color: white;
+	}
+}
+.slidePos-notifications {
+	.slidingPanel {
+		left: -200%;
+	}
+	a#notifications { 
+		background-color: #555; 
+		color: white;
 	}
 }
 
-.slidePos-100 {
-	section.pioPane {
-		right: 20px;
-		width: calc(100% - 30px);
-	}
-	section.notificationsPane {
-		right: calc(-33.3%);
-		width: calc(100% / 3 + 10px);
-	}
-	section.lifePane {
-		right: calc(-33.3% - 10px);
-		width: calc(100% / 3 + 10px);
+// Scrollbar styling
+::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+ 
+// Track 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none; 
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: transparent; 
+}
+ 
+// Handle
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: rgba(0,0,0,0.2); 
+    -webkit-box-shadow: none; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0,0,0,0.4); 
+}
+
+div.flyout {
+	div.notificationFlyout {
+		right: 0px;
+	}	
+}
+
+
+div.notificationFlyout {
+	transition: all 0.5s ease;
+	position: fixed;
+	top: 0px;
+	right: -200px;
+	width: 200px;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: 40px;
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			list-style: none;
+			margin-bottom: 20px;
+		}
 	}
 }
 
-.slidePos-010 {
-	section.pioPane {
-		width: calc(0%);
-		right: calc(100% - 10px);
-	}
-	section.notificationsPane {
-		width:  calc(100% - 20px);
-		right: 0%; // cannot interpolate variables at the moment - waiting for SASS fix
-	}
-	section.lifePane {
-		right: calc(-100% / 3); // cannot interpolate variables at the moment - waiting for SASS fix
-		width: calc(100% / 3);
-	}
-}
 
-.slidePos-001 {
-	section.pioPane {
-		width: calc(100% / 3 - 10px);
-		right: calc(100% / 3 * 2);
-	}
-	section.notificationsPane {
-		width: calc(100% / 3 - 10px);
-		right: calc(66.6666% - 10px); // cannot interpolate variables at the moment - waiting for SASS fix
-	}
-	section.lifePane {
-		width: 100%;
-		right: calc(0% - 30px); // cannot interpolate variables at the moment - waiting for SASS fix
-	}
-}
 
-.slidePos-011 {
-	section.pioPane {
-		width: calc(100% / 3 - 10px);
-		right: calc(100% / 3 * 2);
-	}
-	section.notificationsPane {
-		right: calc(50% - 10px); // cannot interpolate variables at the moment - waiting for SASS fix
-		width: calc(50% - 10px);
-	}
-	section.lifePane {
-		right: calc(0% - 20px); // cannot interpolate variables at the moment - waiting for SASS fix
-		width: calc(50% + 10px);
-	}
-}
-
-.slidePos-000 {
-	section.pioPane {
-		width: calc(0%);
-		right: calc(100% + 10px);
-	}
-	section.notificationsPane {
-		width: calc(0%);
-		right: calc(100% - 10px); // cannot interpolate variables at the moment - waiting for SASS fix
-	}
-	section.lifePane {
-		width: calc(0%);
-		right: calc(100% - 20px); // cannot interpolate variables at the moment - waiting for SASS fix
-	}
-	.containerWrap {
-		opacity: 0;
-	}
-}

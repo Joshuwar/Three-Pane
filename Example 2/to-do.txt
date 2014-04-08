@@ -1,50 +1,12 @@
 
 
-General
-	make html file /
-	add bootstrap & sass for forms etc /
-	add to repo
+Create tab/header nav
+Create content container
+Create 3 panels
 
-create 3 pane view
-	make 3 panes
-		make panes take up full broswer width /
-		make borders between panes feel appropriate
-		make content reflow inside various widths of pane
-	make up to 2 panes collapsible on a toggle
-		make collapse action a smooth transition
-	
-
-make PIO pane
-	make PIO cards/tiles for each source
-		make cards flip and expand on click 
-			show dummy data tables
-			show search field to filter results tables
-			show back button to return to source menu 
-	make PIO navigation 
-		Change view type (by Source, Category or Timeline)
-		Add data source
-		Edit
-		Save
-
-make notifications pane
-	make notification objects
-		thumbnail, originator, body text, link/button action, close button
-	make notification actions smooth
-		close notification collapses notification
-		notification link opens PIO/Life Manager pane, with focus on a specific piece of content
-	make notification navigation
-		Clear all notifications
-		Open notification configuration (ie. throttle notifications)
-
-make life manager pane
-	make life management objects
-		thumbnail, title, body text, text form inputs, submit button, close button
-	make life management navigation
-		Clear all life modules
-		Add life module (ie. app store)
-
-
-
+Create nofitications flyout
+Create JS/CSS for transitioning panels & flyout
+Create try swipe action for navigating between panels
 
 
 

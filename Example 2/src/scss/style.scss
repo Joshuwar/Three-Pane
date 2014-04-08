@@ -132,13 +132,13 @@ html, body {
 header { 
 	background-color: $light-grey;
 	overflow: hidden;
-	height: 35px;
 	nav ul {
 		margin: 0;
 		padding: 0;
 		li {
 			display: inline-block;
 			a {
+				white-space: nowrap;
 				padding: 5px 20px 6px;
 				display: block;
 			}

@@ -1,0 +1,21 @@
+{
+  "name": "ctrlio-three-pane-interface-demo",
+  "version": "0.0.1",
+  "description": "a static interface demo for CTRLio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CTRLio/three-pane.git"
+  },
+  "dependencies": {
+  //  "tiddlywiki": "git+https://github.com/Jermolene/TiddlyWiki5.git#bdbbf94326f70db0f8ef196270ab9e92bfde10fb",
+    "gulp": "^3.6.0"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.5",
+    "gulp-sass": "~0.7.1",
+    "gulp-clean": "~0.2.4",
+    "gulp-debug": "~0.2.0",
+    "gulp-shell": "~0.2.4",
+    "gulp-concat": "^2.2.0"
+  }
+}

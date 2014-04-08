@@ -1,0 +1,303 @@
+/*******************
+  Bootstrap imports
+  *******************/
+
+// Core variables and mixins
+@import "bootstrap";
+@import "sections";
+
+/*******************
+  Project styles
+  *******************/
+
+// Base shades
+
+$off-white: #fbfbfb;
+$white: #ffffff;
+$dark-grey: #5c5c5c;
+$light-grey: #dadada;
+
+// Main accent shades
+
+$green: #43d154;
+$pink: #ff6cde;
+$orange: #ffb400;
+$dark-blue: #0c3265;
+$light-blue: #589fff;
+
+// Typography
+
+@import "typography/aleo"; // aleoregular, aleobold, aleolight, aleoitalic
+
+$font-regular:    		"Courier New";
+$font-bold:    			aleobold;
+$font-light:    		aleolight;
+$font-italic:    		italic;
+
+
+// font sizes and line-heights
+
+$body-size: 				16px;
+$body-line-height: 			24px;
+
+$small-body-size:			16px;
+$small-body-line-height:	22px;
+
+$large-header-size:			50px;
+$large-header-line-height:	50px;
+
+$news-header-size:			40px;
+$news-header-line-height:	40px;
+
+$med-header-size:			30px;
+$med-header-line-height:	35px;
+
+$small-header-size:			20px;
+$small-header-line-height:	22px;
+
+$nav-size:					15px;
+$nav-line-height:			15px;
+
+// Spacing multiples
+
+$small-letter-spacing:		0.1em; 
+
+// Header sizing
+
+$header-min-height: 		600px;
+
+// three pane interface sizes
+
+$handlebarwidth: 			10px;
+
+// Base Styles 
+
+body {
+	text-rendering: optimizeLegibility; 
+	background-color: $off-white;
+	font: normal $body-size/#{$body-line-height} $font-regular;
+	color: $dark-grey;
+}
+
+.center {
+	text-align: center;
+}
+
+// Typographic Element Spacing
+
+p 				{ margin: 0 0 $body-line-height 0; }
+.standfirst		{ margin: 0 0 $med-header-line-height 0;}
+h1 				{ margin: 0 0 $body-line-height 0; }
+h2 				{ margin: 0 0 0 0; }
+h3, h4, h5, h6  { margin: 0 0 0 0; }
+
+
+// Link Styles
+
+a 	{ 
+	color: $light-blue; 
+	transition: opacity 0.5s ease;
+	&:hover { 
+		color: $dark-blue; text-decoration: none; 
+		border-bottom-color: $dark-blue;
+	}
+	&.headerLink {
+		color: $white;
+		font: normal $small-body-size/#{$small-body-line-height} $font-regular;
+		letter-spacing: $small-letter-spacing;
+		position: absolute;
+		margin-top: -$small-body-line-height;
+		img {
+			margin: 0 10px 0 0;
+		}
+	}
+	&.orange {
+		&:hover {
+			color: $white;
+			border-bottom-color: $white;
+		}
+	}
+	&.white {
+		&:hover {
+			color: $orange; // added for the news page- might create odd behaviours elsewhere
+		}
+	}
+}
+
+html, body {
+  height: 100%;
+}
+
+section {
+	width: calc(100% / 3 - 10px);
+	position: absolute;
+	height:100%;
+	background-color: $off-white;
+	transition: all 0.5s ease;
+	&.pioPane {
+		right: 66.6666%;
+	}
+	&.notificationsPane {
+		right:33.33333%;
+		z-index: 2;
+	}
+	&.lifePane {
+		right: 0;
+		z-index: 3;
+	}
+}
+
+header {
+	background-color: $light-grey;
+	position: absolute;
+	top: 0px;
+	width:100%;
+	padding: 6px 15px 4px;
+}
+
+footer {
+	background-color: $light-grey;
+	position: absolute;
+	bottom: 0px;
+	width:100%;
+	padding: 10px 0px;
+	nav ul {
+		padding-left:0px;
+		margin: 0;
+		li {
+			float: left;
+			list-style: none;
+			padding: 6px 10px 4px;
+			a {
+				// padding: 6px 10px 4px;
+				// display: block;
+			}
+		}
+	}
+}
+
+.innerWrap {
+	padding: 50px 20px;
+}
+
+.handleBar {
+	height: 100%;
+	background-color: $dark-grey;
+	width: $handlebarwidth;
+	position: absolute;
+	z-index: 10;
+	margin-left: -$handlebarwidth;
+}
+
+.containerWrap {
+	height: 100%;
+	transition: opacity 0.5s ease;
+}
+
+.slidePos-110 {
+	section.pioPane {
+		right: 50%;
+		width: calc(50% - 10px);
+	}
+	section.notificationsPane {
+		right: 0%;
+		width: 50%;	
+	}
+	section.lifePane {
+		right: calc(-100% / 3 + 10px);
+		width: calc(100% / 3 - 10px);
+	}
+}
+
+.slidePos-101 {
+	section.pioPane {
+		right: 50%;
+		width: calc(50% - 10px);
+	}
+	section.notificationsPane {
+		right: 50%;
+		width: 10px;
+	}
+	section.lifePane {
+		right: 0%;	
+		width: 50%;
+	}
+}
+
+.slidePos-100 {
+	section.pioPane {
+		right: 20px;
+		width: calc(100% - 30px);
+	}
+	section.notificationsPane {
+		right: calc(-33.3%);
+		width: calc(100% / 3 + 10px);
+	}
+	section.lifePane {
+		right: calc(-33.3% - 10px);
+		width: calc(100% / 3 + 10px);
+	}
+}
+
+.slidePos-010 {
+	section.pioPane {
+		width: calc(0%);
+		right: calc(100% - 10px);
+	}
+	section.notificationsPane {
+		width:  calc(100% - 20px);
+		right: 0%; // cannot interpolate variables at the moment - waiting for SASS fix
+	}
+	section.lifePane {
+		right: calc(-100% / 3); // cannot interpolate variables at the moment - waiting for SASS fix
+		width: calc(100% / 3);
+	}
+}
+
+.slidePos-001 {
+	section.pioPane {
+		width: calc(100% / 3 - 10px);
+		right: calc(100% / 3 * 2);
+	}
+	section.notificationsPane {
+		width: calc(100% / 3 - 10px);
+		right: calc(66.6666% - 10px); // cannot interpolate variables at the moment - waiting for SASS fix
+	}
+	section.lifePane {
+		width: 100%;
+		right: calc(0% - 30px); // cannot interpolate variables at the moment - waiting for SASS fix
+	}
+}
+
+.slidePos-011 {
+	section.pioPane {
+		width: calc(100% / 3 - 10px);
+		right: calc(100% / 3 * 2);
+	}
+	section.notificationsPane {
+		right: calc(50% - 10px); // cannot interpolate variables at the moment - waiting for SASS fix
+		width: calc(50% - 10px);
+	}
+	section.lifePane {
+		right: calc(0% - 20px); // cannot interpolate variables at the moment - waiting for SASS fix
+		width: calc(50% + 10px);
+	}
+}
+
+.slidePos-000 {
+	section.pioPane {
+		width: calc(0%);
+		right: calc(100% + 10px);
+	}
+	section.notificationsPane {
+		width: calc(0%);
+		right: calc(100% - 10px); // cannot interpolate variables at the moment - waiting for SASS fix
+	}
+	section.lifePane {
+		width: calc(0%);
+		right: calc(100% - 20px); // cannot interpolate variables at the moment - waiting for SASS fix
+	}
+	.containerWrap {
+		opacity: 0;
+	}
+}

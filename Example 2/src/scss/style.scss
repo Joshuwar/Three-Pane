@@ -150,6 +150,7 @@ header {
 	overflow:hidden;
 	width: 100%;
 	height: calc(100% - 35px);
+	position: relative;
 	.slidingPanel {
 		transition: all 0.5s ease;
 		left: 0%;
@@ -161,6 +162,7 @@ header {
 			width: calc(100% / 3);
 			float: left;
 			height: 100%;
+			position: relative;
 			.innerWrap {
 				padding: 10% 30%;
 				height: 150%;	
@@ -174,7 +176,7 @@ header {
 
 .slidePos-myData {
 	.slidingPanel {
-		left: 0%;
+		// left: 0%;
 	}
 	a#myData { 
 		background-color: #555; 
@@ -183,7 +185,7 @@ header {
 }
 .slidePos-toolbox {
 	.slidingPanel {
-		left: -100%;
+		// left: -100%;
 	}
 	a#toolbox { 
 		background-color: #555; 
@@ -192,7 +194,7 @@ header {
 }
 .slidePos-notifications {
 	.slidingPanel {
-		left: -200%;
+		// left: -200%;
 	}
 	a#notifications { 
 		background-color: #555; 
@@ -230,13 +232,16 @@ div.flyout {
 	}	
 }
 
+li.notificationFlyout {
+	float:right;
+}
 
 div.notificationFlyout {
 	transition: all 0.5s ease;
 	position: fixed;
-	top: 0px;
-	right: -200px;
-	width: 200px;
+	top: 35px;
+	right: -220px;
+	width: 220px;
 	background-color: rgba(0,0,0,0.4);
 	color: white;
 	padding: 40px;

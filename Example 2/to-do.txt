@@ -1,14 +1,30 @@
 
 
-Create tab/header nav
-Create content container
-Create 3 panels
+Create tab/header nav / 
+Create content container /
+Create 3 panels /
 
-Create nofitications flyout
-Create JS/CSS for transitioning panels & flyout
-Create try swipe action for navigating between panels
+Create nofitications flyout /
+Create JS/CSS for transitioning panels & flyout /
+Create try swipe action for navigating between panels /
+
+---
 
 
+Create contextual navigation panels / 
+	Create 'Open Appstore' buttons on panels 
+Animate contextual navigation panel / 
+
+Add right icons for 
+	notifications, 
+	online/offline, 
+	accounts handling
+Add multiple flyouts for different right icons
+
+Create 'Appstore' overlay
+Animate overlay
+
+Create empty fixed width content cards/sections
 
 
 

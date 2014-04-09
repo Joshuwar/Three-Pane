@@ -182,6 +182,10 @@ header {
 		background-color: #555; 
 		color: white;
 	}
+	nav#myData {
+		left: 100%;
+		opacity: 1;
+	}
 }
 .slidePos-toolbox {
 	.slidingPanel {
@@ -191,6 +195,10 @@ header {
 		background-color: #555; 
 		color: white;
 	}
+	nav#toolbox {
+		left: 100%;
+		opacity: 1;
+	}
 }
 .slidePos-notifications {
 	.slidingPanel {
@@ -199,6 +207,10 @@ header {
 	a#notifications { 
 		background-color: #555; 
 		color: white;
+	}
+	nav#notifications {
+		left: 100%;
+		opacity: 1;
 	}
 }
 
@@ -255,5 +267,40 @@ div.notificationFlyout {
 	}
 }
 
+// Contextual Navigation 
+
+div.contextualNavContainer {
+	transition: all 0.8s ease;
+	width: 50%;
+	position: fixed;
+	left: -50%;
+	bottom: 20%;
+	z-index: 10;
+	&.closed {
+		left: calc(-100% + 39px);
+		a.hideNav {
+			transform: rotate(180deg);
+			-webkit-transform: rotate(180deg);
+		}
+	}
+	nav {
+		transition: all 0.8s ease;
+		position: absolute;
+		background-color: rgba(0,0,0,0.4);
+		padding: 20px;
+		width: 100%;
+		left: 0%;
+		opacity: 0;
+		a.hideNav {
+			transition: all 2s ease;
+			position: absolute;
+			transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			right: 5px;
+			padding: 10px;
+			top: 10px;
+		}
+	}
+}
 
 

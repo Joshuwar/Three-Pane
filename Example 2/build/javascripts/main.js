@@ -600,12 +600,23 @@ jQuery(document).ready(function($) {
 		//alert($(this).index());
 
 	});
+	$('a.hideNav').click(function() {
+		$(this).parents('.contextualNavContainer').toggleClass( "closed" );
+
+		/*
+		This func changes the text of the contextual nav, but that has been superceded by css rotation
+		if($(this).parents('.contextualNavContainer').hasClass("closed")) {
+			$(this).html("&#9658;");
+		} else {
+			$(this).html("&#9668;");
+		}*/
+	});
 	$('a#notificationFlyout').click(function() {
 		$(this).parents('.wrap').addClass('flyout');
 	});
 	window.mySwipe = new Swipe(document.getElementById('slider'), {
-	  continuous: false,
-		callback: function(index, elem) { 
+      continuous: false,
+		callback: function(index, elem) {
 //			alert($(elem).data('navid'));
 			$('.wrap').attr('class', 'wrap slidePos-' + $(elem).data('navid'));
 		},

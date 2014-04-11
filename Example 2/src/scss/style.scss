@@ -134,7 +134,7 @@ header {
 	overflow: hidden;
 	nav ul {
 		margin: 0;
-		padding: 0;
+		padding: 0 10px 0 0;
 		li {
 			display: inline-block;
 			a {
@@ -238,17 +238,42 @@ header {
     background: rgba(0,0,0,0.4); 
 }
 
-div.flyout {
-	div.notificationFlyout {
+div.notificationFlyout {
+	div.flyout#notifications {
 		right: 0px;
 	}	
 }
 
-li.notificationFlyout {
+div.connectionFlyout {
+	div.flyout#connection {
+		right: 0px;
+	}	
+}
+div.loginFlyout {
+	div.flyout#login {
+		right: 0px;
+	}
+}	
+
+
+li.iconLink {
 	float:right;
+	font-size:0.9em;
+	position: relative;
+	span {
+		padding-top: 5px;
+	}
+	span.count {
+		padding: 0px;
+		position: absolute;
+		top: 6px;
+		right: 11px;
+		font-size: 0.8em;
+	}
 }
 
-div.notificationFlyout {
+
+div.flyout {
 	transition: all 0.5s ease;
 	position: fixed;
 	top: 35px;
@@ -286,13 +311,16 @@ div.contextualNavContainer {
 	nav {
 		transition: all 0.8s ease;
 		position: absolute;
-		background-color: rgba(0,0,0,0.4);
+		background-color: $dark-grey;
+		color: $light-grey;
 		padding: 20px;
 		width: 100%;
 		left: 0%;
 		opacity: 0;
+		a { color: white; }
+		a:hover {color: white;}
 		a.hideNav {
-			transition: all 2s ease;
+			transition: all 1s ease;
 			position: absolute;
 			transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
@@ -303,4 +331,26 @@ div.contextualNavContainer {
 	}
 }
 
+// Tools overlay
+
+.toolsOverlay {
+	transition: top 0.2s ease-out, opacity 0.6s ease, -webkit-filter 1s ease;
+	position: fixed;
+	width: 90%;
+	height: 80%;
+	margin: 5%;
+	background-color: rgba(255,255,255,1);
+	top: 100%;
+	box-shadow: 0px 0px 5px #888888;
+	padding: 30px;
+	opacity: 0;
+	a:hover {
+		color: $dark-grey;
+	}
+}
+
+.overlayShown .toolsOverlay {
+	opacity: 1;
+	top: 0px;
+}
 

@@ -6,7 +6,7 @@
 </head>
 
 <body>
-	<div class="wrap">
+	<div class="wrap slidePos-notifications">
 		<header>
 			<nav>
 				<ul>
@@ -19,16 +19,22 @@
 					<li>
 						<a href="#" id="toolbox" class="paneControl">My Tools</a>
 					</li>
-					<li class="notificationFlyout">
-						<a href="#" id="notificationFlyout">Notifications Flyout</a>
+					<li class="iconLink">
+						<a href="#" id="notificationFlyout"><span class="glyphicon glyphicon-comment"></span> <span class="count">2</span></a>
+					</li>
+					<li class="iconLink">
+						<a href="#" id="loginFlyout"><span class="glyphicon glyphicon-user"></span></a>
+					</li>
+					<li class="iconLink">
+						<a href="#" id="connectionFlyout"><span class="glyphicon glyphicon-cloud-upload"></span></a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<div class="contextualNavContainer">
-			<nav id="myData" class="contextualNav">My Data nav <a href="#" class="hideNav">&#9668;</a></nav>
+			<nav id="myData" class="contextualNav">My Data nav <a href="#" class="overlayLink">[overlay]</a> <a href="#" class="hideNav">&#9668;</a></nav>
 			<nav id="notifications" class="contextualNav">Notifications nav <a href="#" class="hideNav">&#9668;</a></nav>
-			<nav id="toolbox" class="contextualNav">Toolbox nav <a href="#" class="hideNav">&#9668;</a></nav>
+			<nav id="toolbox" class="contextualNav">Toolbox nav <a href="#" class="overlayLink">[overlay]</a> <a href="#" class="hideNav">&#9668;</a></nav>
 		</div>
 		<div class="viewContainer" id="slider">
 			<div class="slidingPanel">
@@ -37,7 +43,7 @@
 				<div class="viewPane toolbox" data-navid="toolbox"><div class="innerWrap"><p>This is some content. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>
 			</div>
 		</div>
-		<div class="notificationFlyout">
+		<div id="notifications" class="flyout">
 			<ul>
 				<li>Notification</li>
 				<li>Notification</li>
@@ -45,6 +51,16 @@
 				<li>Notification</li>
 				<li>Notification</li>
 			</ul>
+		</div>
+		<div id="login" class="flyout">
+			<p>Login flyout</p>
+		</div>
+		<div id="connection" class="flyout">
+			<p>online/offline flyout</p>
+		</div>
+		<div class="toolsOverlay">
+			<p>Tools Overlay</p>
+			<p><a href="#" class="overlayClose">[Close]</a></p>
 		</div>
 
 	</div>

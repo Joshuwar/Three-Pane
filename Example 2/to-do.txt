@@ -15,10 +15,10 @@ Create contextual navigation panels /
 	Create 'Open Appstore' buttons on panels 
 Animate contextual navigation panel / 
 
-Add right icons for 
-	notifications, 
-	online/offline, 
-	accounts handling
+Add right icons for   /
+	notifications,    /
+	online/offline,   /
+	accounts handling /
 Add multiple flyouts for different right icons
 
 Create 'Appstore' overlay

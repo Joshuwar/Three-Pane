@@ -18,8 +18,8 @@ gulp.task('styles', function(cb) {
         },
         onError: function(err) {
           console.log('error during sass compilation', err);
-        },
-        outputStyle: 'compressed'
+        }
+        //outputStyle: 'compressed'
       }))
       .pipe(gulp.dest('./build/css'))
       .on('end', function() {

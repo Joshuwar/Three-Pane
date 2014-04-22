@@ -43,28 +43,31 @@
 						<div class="row">
 							<div class="col-sm-12 card">
 								<div class="header">
-									<img src="http://lorempixel.com/50/50" alt="">
+									<img src="http://lorempixel.com/60/60" alt="">
+									<a href="#" class="cardControls expand"><span class="glyphicon glyphicon-resize-full"></span> Expand</a>
+									<a href="#" class="cardControls tracking"><span class="glyphicon glyphicon-upload"></span> Tracking</a>
 									<h1>Mobile Tariff Expert</h1> 
-									<p class="subtitle">Find out if you are paying too much for your mobile, and do something about it.</p>
-									<a href="#" class="cardControls tracking">Tracking</a>
-									<a href="#" class="cardControls expand">Expand</a>
+									<p class="subtitle">Find out if you are paying too much for your mobile, and do something about it.</p>									
 								</div>
 								<div class="body">
-									<p class="instructions">Fill in your typical monthly usage and costs below or fill them automatically by clicking 'Get my data', then click 'Go'</p>
 									<div class="row">
-										<div class="col-sm-8 sharedData">
+										<p class="instructions col-sm-6">Fill in your typical monthly usage and costs below or fill them automatically by clicking 'Get my data', then click 'Go'</p>
+									</div>
+									<div class="row">
+										<div class="col-sm-8 sharedData bg-danger">
 											<h2>Shared CTRLzone</h2>
 											<div class="row">
-												<div class="col-sm-2"><input id="usageForm1" class="form-control" type="text" placeholder="230"><label for="usageForm1">Minutes</label></div>
-												<div class="col-sm-2"><input id="usageForm2" class="form-control" type="text" placeholder="190"><label for="usageForm2">texts</label></div>
-												<div class="col-sm-2"><input id="usageForm3" class="form-control" type="text" placeholder="580"><label for="usageForm3">Data (MB)</label></div>
-												<div class="col-sm-2"><input id="usageForm4" class="form-control" type="text" placeholder="&pound;45.00"><label for="usageForm4">Monthly Spend</label></div>
-												<div class="col-sm-2">
-													<a href="#" class="btn btn-default">Get My Data</a>
+												<div class="col-sm-2"><input id="usageForm1" class="form-control input-lg" type="text" placeholder="230"><label for="usageForm1">Minutes</label></div>
+												<div class="col-sm-2"><input id="usageForm2" class="form-control input-lg" type="text" placeholder="190"><label for="usageForm2">Texts</label></div>
+												<div class="col-sm-2"><input id="usageForm3" class="form-control input-lg" type="text" placeholder="580"><label for="usageForm3">Data (MB)</label></div>
+												<div class="col-sm-2"><input id="usageForm4" class="form-control input-lg" type="text" placeholder="&pound;45.00"><label for="usageForm4">Monthly Spend</label></div>
+												<div class="col-sm-4">
+													<a href="#" class="btn btn-default btn-lg btn-block">Get My Data</a>
 												</div>
 											</div>
 											<div class="row">
-												<div class="col-sm-12">
+												<div class="col-sm-8">
+													<span class="selectIcon glyphicon glyphicon-plus"></span>
 													<select class="form-control">
 													  <option disabled selected>choose a phone model</option>
 													  <option>Phone Option 1</option>
@@ -73,11 +76,13 @@
 													  <option>Phone Option 4</option>
 													  <option>Phone Option 5</option>
 													</select>
+													<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Add more usage details</a>
+
 												</div>
 											</div>
 										</div>
 										<div class="col-sm-4 callOut">
-											<a href="#" class="btn btn-primary btn-lg btn-block">Go</a>
+											<a href="#" class="btn btn-primary btn-lg btn-block">Go!</a>
 											<p>Find out how much you should be paying and what to do about it</p>	
 										</div>
 									</div>

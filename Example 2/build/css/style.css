@@ -4706,6 +4706,8 @@ div.contextualNavContainer {
       display: block; }
     .card .resultBlock .row {
       clear: both; }
+    .card .resultBlock .btn {
+      margin-bottom: 15px; }
   .card p.instructions {
     font-size: 18px;
     line-height: 26px;

@@ -4474,8 +4474,8 @@ header {
       height: 100%;
       position: relative; }
       .viewContainer .slidingPanel .viewPane .innerWrap {
-        padding: 10% 30%;
-        height: 150%; }
+        padding-top: 10px;
+        padding-bottom: 150px; }
       .viewContainer .slidingPanel .viewPane.myData {
         background-color: #eee; }
       .viewContainer .slidingPanel .viewPane.toolbox {
@@ -4611,3 +4611,8 @@ div.contextualNavContainer {
 .overlayShown .toolsOverlay {
   opacity: 1;
   top: 0px; }
+
+.card {
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px; }

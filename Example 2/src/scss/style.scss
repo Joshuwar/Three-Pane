@@ -164,8 +164,9 @@ header {
 			height: 100%;
 			position: relative;
 			.innerWrap {
-				padding: 10% 30%;
-				height: 150%;	
+				padding-top: 10px;
+				padding-bottom: 150px;
+
 			}
 			&.myData 		{ background-color: #eee;}
 			&.toolbox 		{ background-color: #dadada;}
@@ -354,3 +355,10 @@ div.contextualNavContainer {
 	top: 0px;
 }
 
+// Cards - generic styles
+
+.card {
+	background-color: $white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}

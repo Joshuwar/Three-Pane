@@ -27,20 +27,21 @@ $light-blue: #589fff;
 
 // Typography
 
-@import "typography/aleo"; // aleoregular, aleobold, aleolight, aleoitalic
+@import "typography/opensans"; 	// opensans-light, opensans-regular, opensans-lightitalic, opensans-italic
+@import "typography/aleo"; 		// aleolight 
 
-$font-regular:    		"Courier New";
-$font-bold:    			aleobold;
-$font-light:    		aleolight;
-$font-italic:    		italic;
+$font-regular:    		opensans-light;
+$font-bold:    			aleolight;
+$font-light:    		opensans-light;
+$font-italic:    		opensans-lightitalic;
 
 
 // font sizes and line-heights
 
 $body-size: 				16px;
-$body-line-height: 			24px;
+$body-line-height: 			26px;
 
-$small-body-size:			16px;
+$small-body-size:			14px;
 $small-body-line-height:	22px;
 
 $large-header-size:			50px;
@@ -90,6 +91,8 @@ p 				{ margin: 0 0 $body-line-height 0; }
 h1 				{ margin: 0 0 $body-line-height 0; }
 h2 				{ margin: 0 0 0 0; }
 h3, h4, h5, h6  { margin: 0 0 0 0; }
+h1, h2, h3, h4, 
+h5, h6  		{ font-family: $font-bold; }
 
 
 // Link Styles
@@ -119,7 +122,7 @@ a 	{
 	}
 	&.white {
 		&:hover {
-			color: $orange; // added for the news page- might create odd behaviours elsewhere
+			color: $orange; 
 		}
 	}
 }
@@ -136,6 +139,8 @@ header {
 		margin: 0;
 		padding: 0 10px 0 0;
 		li {
+			font-size: $nav-size;
+			letter-spacing: $small-letter-spacing;
 			display: inline-block;
 			a {
 				white-space: nowrap;

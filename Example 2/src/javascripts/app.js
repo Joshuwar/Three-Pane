@@ -8,6 +8,10 @@ jQuery(document).ready(function($) {
 	$('a.overlayLink, a.overlayClose').click(function() {
 		$(this).parents('.wrap').toggleClass( "overlayShown" );
 	});
+	$('a.viewMore').click(function() {
+		$(this).parents('.resultBlock').toggleClass( "open" );
+		//$(this).text("View Less");
+	});
 	$('a.hideNav').click(function() {
 		$(this).parents('.contextualNavContainer').toggleClass( "closed" );
 		/*

@@ -526,11 +526,11 @@ div.contextualNavContainer {
 
 
 
-.resultBlock.closed .additionalContent {
+.resultBlock .additionalContent {
 	display:none;
 }
 
-.resultBlock .additionalContent {
+.resultBlock.open .additionalContent {
 	display:block;
 }
 

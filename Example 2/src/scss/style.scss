@@ -449,7 +449,7 @@ div.contextualNavContainer {
 			background: $light-grey;
 		}
 		h4 {
-			margin-top: 15px;
+			margin-top: 5px;
 		}
 		.figure {
 			font-size: 18px;
@@ -461,13 +461,16 @@ div.contextualNavContainer {
 			margin-bottom: 15px;
 			display: block;
 		}
-		.row {
+		.singleResult.row {
 			clear: both;
 			border-bottom: 1px solid $white;
-			padding-top: 20px;
+			margin-bottom: 20px;
 		}
 		.btn {
 			margin-bottom: 15px;
+		}
+		a.viewMore {
+			margin-top: 10px;
 		}
 	}
 	p.instructions {
@@ -520,6 +523,17 @@ div.contextualNavContainer {
 		}
 	}
 }
+
+
+
+.resultBlock.closed .additionalContent {
+	display:none;
+}
+
+.resultBlock .additionalContent {
+	display:block;
+}
+
 
 // Bootstrap additional 
 

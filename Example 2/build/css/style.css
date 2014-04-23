@@ -4701,7 +4701,7 @@ div.contextualNavContainer {
       height: 47px;
       background: #dadada; }
     .card .resultBlock h4 {
-      margin-top: 15px; }
+      margin-top: 5px; }
     .card .resultBlock .figure {
       font-size: 18px;
       font-family: opensans-regular;
@@ -4710,12 +4710,14 @@ div.contextualNavContainer {
       font-size: 14px;
       margin-bottom: 15px;
       display: block; }
-    .card .resultBlock .row {
+    .card .resultBlock .singleResult.row {
       clear: both;
       border-bottom: 1px solid #ffffff;
-      padding-top: 20px; }
+      margin-bottom: 20px; }
     .card .resultBlock .btn {
       margin-bottom: 15px; }
+    .card .resultBlock a.viewMore {
+      margin-top: 10px; }
   .card p.instructions {
     font-size: 18px;
     line-height: 26px;
@@ -4750,6 +4752,12 @@ div.contextualNavContainer {
       margin-bottom: 15px; }
     .card .callOut p {
       margin-bottom: 5px; }
+
+.resultBlock.closed .additionalContent {
+  display: none; }
+
+.resultBlock .additionalContent {
+  display: block; }
 
 .btn {
   font-family: opensans-regular; }

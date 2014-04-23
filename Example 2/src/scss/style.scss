@@ -534,6 +534,22 @@ div.contextualNavContainer {
 	display:block;
 }
 
+.notification {
+	img {
+		width: 100%;
+		height: auto;
+	}
+	h1 {
+		margin-bottom: 5px;
+	}
+	p {
+		margin-bottom: 10px;
+	}
+	.btn {
+		margin-bottom: 15px;	
+	}
+}
+
 
 // Bootstrap additional 
 

@@ -4759,6 +4759,16 @@ div.contextualNavContainer {
 .resultBlock.open .additionalContent {
   display: block; }
 
+.notification img {
+  width: 100%;
+  height: auto; }
+.notification h1 {
+  margin-bottom: 5px; }
+.notification p {
+  margin-bottom: 10px; }
+.notification .btn {
+  margin-bottom: 15px; }
+
 .btn {
   font-family: opensans-regular; }
 

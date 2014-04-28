@@ -156,7 +156,7 @@ header {
 	}
 }
 .logo {
-	padding: 10px 10px 9px;
+	padding: 10px 20px 9px;
 	float: left;
 	img {
 		width: 100px;
@@ -494,6 +494,9 @@ div.contextualNavContainer {
 	}
 	.sharedData {
 		// background-color: #d2dcfd;
+		border-top: 3px solid $orange;
+		border-right: 1px solid $orange;
+		border-bottom: 3px solid $orange;
 		padding-top: 15px;
 		padding-bottom: 15px;
 		position: relative;
@@ -570,6 +573,11 @@ div.contextualNavContainer {
 .btn {
 	font-family: opensans-regular;
 }
+
+.bg-info {
+	color: white;
+}
+
 
 // Card flip styles
 

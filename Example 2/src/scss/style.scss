@@ -427,6 +427,7 @@ div.contextualNavContainer {
 		margin: 15px 0;
 		h2 {
 			color: $dark-blue;
+			margin-bottom: 5px;
 		}
 		p {
 			margin-bottom: 0;
@@ -438,7 +439,7 @@ div.contextualNavContainer {
 		}
 	}
 	.resultBlock {
-		margin-top: 15px;
+		margin-bottom: 15px;
 		padding-top: 15px;
 		.resultNumber {
 			font-size: 40px;
@@ -447,10 +448,19 @@ div.contextualNavContainer {
 			height: 47px;
 			text-align: center;
 			float: left;
-			background-color: $off-white;
-			color: $dark-blue;
+			background-color: $light-blue;
+			color: $off-white;
 			padding-top: 10px;
 			margin-right: 15px;
+		}
+		.table {
+			td {
+				padding: 15px 0px;
+			}
+			p {
+				margin-bottom: 0px;
+			}
+
 		}
 		p {
 			margin-bottom: 15px;
@@ -458,7 +468,7 @@ div.contextualNavContainer {
 		img {
 			float: left;
 			margin-right: 15px;
-			margin-bottom: 15px;
+			// margin-bottom: 15px;
 			width: 47px;
 			height: 47px;
 			background: $light-grey;
@@ -473,7 +483,7 @@ div.contextualNavContainer {
 		}
 		.value {
 			font-size: 14px;
-			margin-bottom: 15px;
+			//margin-bottom: 15px;
 			display: block;
 		}
 		.singleResult.row {
@@ -482,8 +492,8 @@ div.contextualNavContainer {
 			margin-bottom: 20px;
 		}
 		.btn {
-			margin-bottom: 15px;
-			border: none;
+			//margin-bottom: 15px;
+			//border: none;
 		}
 		a.viewMore {
 			margin-top: 10px;

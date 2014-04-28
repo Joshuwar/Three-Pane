@@ -4687,13 +4687,14 @@ div.contextualNavContainer {
     padding-bottom: 15px;
     margin: 15px 0; }
     .card .resultSummary h2 {
-      color: #0c3265; }
+      color: #0c3265;
+      margin-bottom: 5px; }
     .card .resultSummary p {
       margin-bottom: 0; }
   .card .resultsHeading p {
     margin-bottom: 0; }
   .card .resultBlock {
-    margin-top: 15px;
+    margin-bottom: 15px;
     padding-top: 15px; }
     .card .resultBlock .resultNumber {
       font-size: 40px;
@@ -4702,16 +4703,19 @@ div.contextualNavContainer {
       height: 47px;
       text-align: center;
       float: left;
-      background-color: #fbfbfb;
-      color: #0c3265;
+      background-color: #589fff;
+      color: #fbfbfb;
       padding-top: 10px;
       margin-right: 15px; }
+    .card .resultBlock .table td {
+      padding: 15px 0px; }
+    .card .resultBlock .table p {
+      margin-bottom: 0px; }
     .card .resultBlock p {
       margin-bottom: 15px; }
     .card .resultBlock img {
       float: left;
       margin-right: 15px;
-      margin-bottom: 15px;
       width: 47px;
       height: 47px;
       background: #dadada; }
@@ -4723,15 +4727,11 @@ div.contextualNavContainer {
       display: block; }
     .card .resultBlock .value {
       font-size: 14px;
-      margin-bottom: 15px;
       display: block; }
     .card .resultBlock .singleResult.row {
       clear: both;
       border-bottom: 1px solid #ffffff;
       margin-bottom: 20px; }
-    .card .resultBlock .btn {
-      margin-bottom: 15px;
-      border: none; }
     .card .resultBlock a.viewMore {
       margin-top: 10px; }
   .card p.instructions {

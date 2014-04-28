@@ -4788,6 +4788,8 @@ div.contextualNavContainer {
 
 .notificationCard {
   padding-bottom: 15px; }
+  .notificationCard a.loadMore {
+    margin-top: 15px; }
 
 .notification {
   border-bottom: 1px solid #dadada;

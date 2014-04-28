@@ -4464,8 +4464,11 @@ html, body {
   width: 100%; }
 
 header {
-  background-color: #dadada;
-  overflow: hidden; }
+  background-color: #fbfbfb;
+  box-shadow: 0 0px 2px 1px #666;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
   header nav ul {
     margin: 0;
     padding: 0 10px 0 0; }
@@ -4475,14 +4478,22 @@ header {
       display: inline-block; }
       header nav ul li a {
         white-space: nowrap;
-        padding: 5px 20px 6px;
+        padding: 7px 20px 4px;
         display: block; }
+
+.logo {
+  padding: 10px 10px 9px;
+  float: left; }
+  .logo img {
+    width: 100px;
+    height: auto; }
 
 .viewContainer {
   overflow: hidden;
   width: 100%;
-  height: calc(100% - 35px);
-  position: relative; }
+  height: calc(100% - 32px);
+  position: relative;
+  margin-top: -10px; }
   .viewContainer .slidingPanel {
     transition: all 0.5s ease;
     left: 0%;
@@ -4494,34 +4505,36 @@ header {
       width: calc(100% / 3);
       float: left;
       height: 100%;
-      position: relative; }
+      position: relative;
+      background: no-repeat center center fixed;
+      -webkit-background-size: cover; }
       .viewContainer .slidingPanel .viewPane .innerWrap {
         padding-top: 30px;
         padding-bottom: 150px; }
       .viewContainer .slidingPanel .viewPane.myData {
-        background-color: #eee; }
+        background-image: url(../images/ctrlio-bg-1.png); }
       .viewContainer .slidingPanel .viewPane.toolbox {
-        background-color: #dadada; }
+        background-image: url(../images/ctrlio-bg-2.jpg); }
       .viewContainer .slidingPanel .viewPane.notifications {
-        background-color: #d3d3d3; }
+        background-image: url(../images/ctrlio-bg-3.jpg); }
 
 .slidePos-myData a#myData {
-  background-color: #555;
-  color: white; }
+  border-bottom: 5px solid #589fff;
+  color: #589fff; }
 .slidePos-myData nav#myData {
   left: 100%;
   opacity: 1; }
 
 .slidePos-toolbox a#toolbox {
-  background-color: #555;
-  color: white; }
+  border-bottom: 5px solid #ffb400;
+  color: #ffb400; }
 .slidePos-toolbox nav#toolbox {
   left: 100%;
   opacity: 1; }
 
 .slidePos-notifications a#notifications {
-  background-color: #555;
-  color: white; }
+  border-bottom: 5px solid #43d154;
+  color: #43d154; }
 .slidePos-notifications nav#notifications {
   left: 100%;
   opacity: 1; }
@@ -4558,7 +4571,7 @@ li.iconLink {
   font-size: 0.9em;
   position: relative; }
   li.iconLink span {
-    padding-top: 5px; }
+    padding-top: 7px; }
   li.iconLink span.count {
     padding: 0px;
     position: absolute;

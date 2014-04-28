@@ -135,8 +135,11 @@ html, body {
 }
 
 header { 
-	background-color: $light-grey;
+	background-color: $off-white;
+	box-shadow: 0 0px 2px 1px #666;
 	overflow: hidden;
+	position: relative;
+	z-index: 1;
 	nav ul {
 		margin: 0;
 		padding: 0 10px 0 0;
@@ -146,18 +149,27 @@ header {
 			display: inline-block;
 			a {
 				white-space: nowrap;
-				padding: 5px 20px 6px;
+				padding: 7px 20px 4px;
 				display: block;
 			}
 		}
+	}
+}
+.logo {
+	padding: 10px 10px 9px;
+	float: left;
+	img {
+		width: 100px;
+		height: auto;
 	}
 }
 
 .viewContainer {
 	overflow:hidden;
 	width: 100%;
-	height: calc(100% - 35px);
+	height: calc(100% - 32px);
 	position: relative;
+	margin-top: -10px;
 	.slidingPanel {
 		transition: all 0.5s ease;
 		left: 0%;
@@ -170,14 +182,16 @@ header {
 			float: left;
 			height: 100%;
 			position: relative;
+			background: no-repeat center center fixed;
+			-webkit-background-size: cover;
 			.innerWrap {
 				padding-top: 30px;
 				padding-bottom: 150px;
 
 			}
-			&.myData 		{ background-color: #eee;}
-			&.toolbox 		{ background-color: #dadada;}
-			&.notifications { background-color: #d3d3d3;}
+			&.myData 		{ background-image: url(../images/ctrlio-bg-1.png);}
+			&.toolbox 		{ background-image: url(../images/ctrlio-bg-2.jpg);}
+			&.notifications { background-image: url(../images/ctrlio-bg-3.jpg);}
 		}
 	}
 }
@@ -187,8 +201,8 @@ header {
 		// left: 0%;
 	}
 	a#myData { 
-		background-color: #555; 
-		color: white;
+		border-bottom: 5px solid $light-blue;
+		color: $light-blue;
 	}
 	nav#myData {
 		left: 100%;
@@ -200,8 +214,8 @@ header {
 		// left: -100%;
 	}
 	a#toolbox { 
-		background-color: #555; 
-		color: white;
+		border-bottom: 5px solid $orange;
+		color: $orange;
 	}
 	nav#toolbox {
 		left: 100%;
@@ -213,8 +227,8 @@ header {
 		// left: -200%;
 	}
 	a#notifications { 
-		background-color: #555; 
-		color: white;
+		border-bottom: 5px solid $green;
+		color: $green;
 	}
 	nav#notifications {
 		left: 100%;
@@ -269,7 +283,7 @@ li.iconLink {
 	font-size:0.9em;
 	position: relative;
 	span {
-		padding-top: 5px;
+		padding-top: 7px;
 	}
 	span.count {
 		padding: 0px;

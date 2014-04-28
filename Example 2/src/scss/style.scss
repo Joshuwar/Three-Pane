@@ -391,9 +391,15 @@ div.contextualNavContainer {
 	background-color: $off-white;
 	padding-top: 15px;
 	margin-bottom: 30px;
-	//padding-bottom: 15px;
 	box-shadow: 0 6px 6px -6px #333;
-	//border: 1px solid $white;
+	&.closed {
+		.header {
+			border-bottom: none;
+		}
+		.body {
+			display: none;
+		}
+	}
 	&.small .header {
 		border-bottom: none;
 	}

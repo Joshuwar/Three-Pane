@@ -4660,6 +4660,10 @@ div.contextualNavContainer {
   padding-top: 15px;
   margin-bottom: 30px;
   box-shadow: 0 6px 6px -6px #333; }
+  .card.closed .header {
+    border-bottom: none; }
+  .card.closed .body {
+    display: none; }
   .card.small .header {
     border-bottom: none; }
   .card .header {

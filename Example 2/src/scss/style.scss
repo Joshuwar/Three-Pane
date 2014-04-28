@@ -341,8 +341,12 @@ div.contextualNavContainer {
 		width: 100%;
 		left: 0%;
 		opacity: 0;
-		a.btn { color: $dark-grey; }
-		a.btn:hover {color: $dark-blue;}
+		a.btn { 
+			border: none;
+			background-color: transparent;
+			color: $off-white; 
+		}
+		a.btn:hover {color: $light-grey;}
 		a.hideNav {
 			transition: all 1s ease;
 			position: absolute;

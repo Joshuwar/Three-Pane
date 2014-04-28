@@ -4621,9 +4621,11 @@ div.contextualNavContainer {
     left: 0%;
     opacity: 0; }
     div.contextualNavContainer nav a.btn {
-      color: #5c5c5c; }
+      border: none;
+      background-color: transparent;
+      color: #fbfbfb; }
     div.contextualNavContainer nav a.btn:hover {
-      color: #0c3265; }
+      color: #dadada; }
     div.contextualNavContainer nav a.hideNav {
       transition: all 1s ease;
       position: absolute;

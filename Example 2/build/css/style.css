@@ -4668,7 +4668,10 @@ div.contextualNavContainer {
     .card .header img {
       float: left;
       margin-right: 15px;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      width: 60px;
+      height: 60px;
+      background-color: #dadada; }
     .card .header h1 {
       margin-bottom: 0;
       color: #0c3265; }
@@ -4783,15 +4786,21 @@ div.contextualNavContainer {
 .resultBlock.open .additionalContent {
   display: block; }
 
-.notification img {
-  width: 100%;
-  height: auto; }
-.notification h1 {
-  margin-bottom: 5px; }
-.notification p {
-  margin-bottom: 10px; }
-.notification .btn {
-  margin-bottom: 15px; }
+.notificationCard {
+  padding-bottom: 15px; }
+
+.notification {
+  border-bottom: 1px solid #dadada;
+  padding: 15px 0px;
+  overflow: hidden; }
+  .notification img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc; }
+  .notification h4 {
+    margin-bottom: 5px; }
+  .notification p {
+    margin-bottom: 0px; }
 
 .btn {
   font-family: opensans-regular; }

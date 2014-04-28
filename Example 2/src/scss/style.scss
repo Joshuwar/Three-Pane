@@ -404,6 +404,9 @@ div.contextualNavContainer {
 			float:left; 
 			margin-right: 15px;
 			margin-bottom: 15px;
+			width: 60px;
+			height: 60px;
+			background-color: $light-grey;
 		}
 		h1 {
 			margin-bottom: 0;
@@ -571,19 +574,24 @@ div.contextualNavContainer {
 	display:block;
 }
 
+.notificationCard {
+	padding-bottom: 15px;
+}
+
 .notification {
+	border-bottom: 1px solid $light-grey;
+	padding: 15px 0px;
+	overflow: hidden;
 	img {
 		width: 100%;
 		height: auto;
+		border: 1px solid #ccc;
 	}
-	h1 {
+	h4 {
 		margin-bottom: 5px;
 	}
 	p {
-		margin-bottom: 10px;
-	}
-	.btn {
-		margin-bottom: 15px;	
+		margin-bottom: 0px;
 	}
 }
 

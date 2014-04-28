@@ -4438,6 +4438,9 @@ h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
   font-family: aleolight; }
 
+.orange {
+  color: #ffb400; }
+
 a {
   color: #a1a1a1;
   transition: opacity 0.5s ease; }

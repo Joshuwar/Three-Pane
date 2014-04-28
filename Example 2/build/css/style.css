@@ -4608,21 +4608,22 @@ div.contextualNavContainer {
   div.contextualNavContainer.closed {
     left: calc(-100% + 39px); }
     div.contextualNavContainer.closed a.hideNav {
+      color: #fbfbfb;
       transform: rotate(180deg);
       -webkit-transform: rotate(180deg); }
   div.contextualNavContainer nav {
     transition: all 0.8s ease;
     position: absolute;
-    background-color: #5c5c5c;
-    color: #dadada;
-    padding: 20px;
+    background-color: #0c3265;
+    box-shadow: 0 1px 2px 0px #666;
+    padding: 20px 40px 20px;
     width: 100%;
     left: 0%;
     opacity: 0; }
-    div.contextualNavContainer nav a {
-      color: white; }
-    div.contextualNavContainer nav a:hover {
-      color: white; }
+    div.contextualNavContainer nav a.btn {
+      color: #5c5c5c; }
+    div.contextualNavContainer nav a.btn:hover {
+      color: #0c3265; }
     div.contextualNavContainer nav a.hideNav {
       transition: all 1s ease;
       position: absolute;
@@ -4630,7 +4631,9 @@ div.contextualNavContainer {
       -webkit-transform: rotate(0deg);
       right: 5px;
       padding: 10px;
-      top: 10px; }
+      top: 14px; }
+    div.contextualNavContainer nav a.hideNav:hover {
+      color: #fbfbfb; }
 
 .toolsOverlay {
   transition: top 0.2s ease-out, opacity 0.6s ease, -webkit-filter 1s ease;

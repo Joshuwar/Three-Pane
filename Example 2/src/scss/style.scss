@@ -327,6 +327,7 @@ div.contextualNavContainer {
 	&.closed {
 		left: calc(-100% + 39px);
 		a.hideNav {
+			color: $off-white;
 			transform: rotate(180deg);
 			-webkit-transform: rotate(180deg);
 		}
@@ -334,14 +335,14 @@ div.contextualNavContainer {
 	nav {
 		transition: all 0.8s ease;
 		position: absolute;
-		background-color: $dark-grey;
-		color: $light-grey;
-		padding: 20px;
+		background-color: $dark-blue;
+		box-shadow: 0 1px 2px 0px #666;
+		padding: 20px 40px 20px;
 		width: 100%;
 		left: 0%;
 		opacity: 0;
-		a { color: white; }
-		a:hover {color: white;}
+		a.btn { color: $dark-grey; }
+		a.btn:hover {color: $dark-blue;}
 		a.hideNav {
 			transition: all 1s ease;
 			position: absolute;
@@ -349,7 +350,10 @@ div.contextualNavContainer {
 			-webkit-transform: rotate(0deg);
 			right: 5px;
 			padding: 10px;
-			top: 10px;
+			top: 14px;
+		}
+		a.hideNav:hover {
+			color: $off-white;
 		}
 	}
 }

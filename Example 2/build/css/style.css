@@ -4687,10 +4687,8 @@ div.contextualNavContainer {
       color: #0c3265; }
     .card .resultSummary p {
       margin-bottom: 0; }
-  .card .resultsHeading {
-    margin-top: 15px; }
-    .card .resultsHeading p {
-      margin-bottom: 0; }
+  .card .resultsHeading p {
+    margin-bottom: 0; }
   .card .resultBlock {
     margin-top: 15px;
     padding-top: 15px; }
@@ -4729,7 +4727,8 @@ div.contextualNavContainer {
       border-bottom: 1px solid #ffffff;
       margin-bottom: 20px; }
     .card .resultBlock .btn {
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      border: none; }
     .card .resultBlock a.viewMore {
       margin-top: 10px; }
   .card p.instructions {
@@ -4764,7 +4763,7 @@ div.contextualNavContainer {
     .card .sharedData a.btn {
       margin-bottom: 15px; }
   .card .callOut {
-    padding-top: 49px; }
+    padding-top: 51px; }
     .card .callOut a.btn {
       margin-bottom: 15px; }
     .card .callOut p {

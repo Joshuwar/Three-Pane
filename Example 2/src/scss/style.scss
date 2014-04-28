@@ -432,7 +432,6 @@ div.contextualNavContainer {
 		}
 	}
 	.resultsHeading {
-		margin-top: 15px;
 		p {
 			margin-bottom: 0;
 		}
@@ -483,6 +482,7 @@ div.contextualNavContainer {
 		}
 		.btn {
 			margin-bottom: 15px;
+			border: none;
 		}
 		a.viewMore {
 			margin-top: 10px;
@@ -532,7 +532,7 @@ div.contextualNavContainer {
 		}
 	}
 	.callOut {
-		padding-top: 49px; // to fix: this isn't flexible JB
+		padding-top: 51px; // to fix: this isn't flexible JB
 		a.btn {
 			margin-bottom: 15px;
 		}

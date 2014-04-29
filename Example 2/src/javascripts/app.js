@@ -12,6 +12,9 @@ jQuery(document).ready(function($) {
 		$(this).parents('.resultBlock').toggleClass( "open" );
 		//$(this).text("View Less");
 	});
+	$('a.cardControls').click(function() {
+		$(this).parents('.card').toggleClass( "closed" );
+	});
 	$('a.hideNav').click(function() {
 		$(this).parents('.contextualNavContainer').toggleClass( "closed" );
 		/*

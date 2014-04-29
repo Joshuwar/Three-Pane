@@ -178,7 +178,7 @@ header {
 		width: 300%;
 		height: 100%;
 		.viewPane {
-			overflow-y: scroll;
+			overflow-y: auto;
 			width: calc(100% / 3);
 			float: left;
 			height: 100%;

@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
 
-
 	// controls which pane is visible
 	$('a.paneControl').click(function() {
 		$(this).parents('.wrap').attr('class', 'wrap slidePos-' + this.id);

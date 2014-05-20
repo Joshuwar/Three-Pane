@@ -8,6 +8,9 @@
 <body>
 	<div class="wrap slidePos-notifications">
 		<header>
+			<div class="logo">
+				<img src="images/logo.svg" alt="CTRLio">
+			</div>
 			<nav>
 				<ul>
 					<li>
@@ -31,16 +34,409 @@
 				</ul>
 			</nav>
 		</header>
-		<div class="contextualNavContainer">
-			<nav id="myData" class="contextualNav">My Data nav <a href="#" class="overlayLink">[overlay]</a> <a href="#" class="hideNav">&#9668;</a></nav>
-			<nav id="notifications" class="contextualNav">Notifications nav <a href="#" class="hideNav">&#9668;</a></nav>
-			<nav id="toolbox" class="contextualNav">Toolbox nav <a href="#" class="overlayLink">[overlay]</a> <a href="#" class="hideNav">&#9668;</a></nav>
+		<div class="contextualNavContainer closed">
+			<nav id="myData" class="contextualNav">
+				<div class="btn-group pull-right">
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span> Settings</a>
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span> Add Source</a>
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Edit Information</a>
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-ok-sign"></span> Save</a>
+					<a href="#" class="btn btn-default overlayLink"><span class="glyphicon glyphicon-wrench"></span> Add a Tool</a>
+				</div>
+				<a href="#" class="hideNav">&#9668;</a>
+			</nav>
+			<nav id="notifications" class="contextualNav">
+				<div class="btn-group pull-right">
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span> Settings</a>
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span> Add Source</a>
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Edit Information</a>
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-ok-sign"></span> Save</a>
+					<a href="#" class="btn btn-default overlayLink"><span class="glyphicon glyphicon-wrench"></span> Add a Tool</a>
+				</div>
+				<a href="#" class="hideNav">&#9668;</a>
+			</nav>
+			<nav id="toolbox" class="contextualNav">
+				<div class="btn-group pull-right">
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span> Settings</a>
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span> Add Source</a>
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Edit Information</a>
+					<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-ok-sign"></span> Save</a>
+					<a href="#" class="btn btn-default overlayLink"><span class="glyphicon glyphicon-wrench"></span> Add a Tool</a>
+				</div>
+				<a href="#" class="hideNav">&#9668;</a>
+			</nav>
 		</div>
 		<div class="viewContainer" id="slider">
 			<div class="slidingPanel">
-				<div class="viewPane notifications" data-navid="notifications"><div class="innerWrap"><p>This is some content. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>
-				<div class="viewPane myData" data-navid="myData"><div class="innerWrap"><p>This is some content. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>
-				<div class="viewPane toolbox" data-navid="toolbox"><div class="innerWrap"><p>This is some content. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div>
+				<div class="viewPane notifications" data-navid="notifications">
+					<div class="innerWrap container">
+						<div class="row">
+							<div class="col-sm-9 card notificationCard">
+								<div class="header">
+									<img src="http://lorempixel.com/60/60" alt="">
+									<a href="#" class="cardControls expand"><span class="glyphicon glyphicon-cog"></span> Preferences</a>
+									<h1>CTRLio Notifications</h1> 
+									<p class="subtitle">Keeping you up to date on how you can save money.</p>	
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="notification">
+											<div class="row">
+												<div class="col-sm-3"><h2>Today</h2></div>
+												<div class="col-sm-3 pull-right">
+													<select class="form-control">
+													  <option selected>All notifications</option>
+													  <option>Some notifications</option>
+													  <option>other notifications</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="notification">
+									<div class="row">
+										<div class="col-sm-11 col-sm-offset-1">
+											<h4>Welcome to CTRLio</h4> 
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-1">
+											<img src="images/network-logos-ctrlio.jpg" alt="">	
+										</div>
+										<div class="col-sm-8">
+											<p>Did you know that we all typically waste over 40% of the money we spend on our mobiles because we are on the wrong tariffs? To check you are on the right one, click here.</p>			
+										</div>
+										<div class="col-sm-2">
+											<a href="#" class="btn btn-primary btn-sm btn-block">Check now</a>
+										</div>
+										<div class="col-sm-1">
+											<a href="#" class="btn btn-default btn-sm btn-block">Clear</a>
+										</div>
+									</div>
+								</div>
+								<div class="notification">
+									<div class="row">
+										<div class="col-sm-11 col-sm-offset-1">
+											<h4>Welcome to CTRLio</h4> 
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-1">
+											<img src="images/network-logos-ctrlio.jpg" alt="">	
+										</div>
+										<div class="col-sm-8">
+											<p>Did you know that we all typically waste over 40% of the money we spend on our mobiles because we are on the wrong tariffs? To check you are on the right one, click here.</p>			
+										</div>
+										<div class="col-sm-2">
+											<a href="#" class="btn btn-primary btn-sm btn-block">Check now</a>
+										</div>
+										<div class="col-sm-1">
+											<a href="#" class="btn btn-default btn-sm btn-block">Clear</a>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4 col-sm-offset-4"><a href="#" class="btn btn-default btn-block loadMore">Load more</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="viewPane myData" data-navid="myData">
+					<!-- <div class="innerWrap container">
+						<h2 class="orange">My Data</h2>
+					</div> -->
+					<iframe src="../myprofile.html" frameborder="0" class="pio-iframe"></iframe>
+				</div>
+				<div class="viewPane toolbox" data-navid="toolbox">
+					<div class="innerWrap container">
+						<div class="row">
+							<div class="col-sm-12 card">
+								<div class="header">
+									<img src="http://lorempixel.com/60/60" alt="">
+									<a href="#" class="cardControls expand"><span class="glyphicon glyphicon-resize-full"></span> Expand</a>
+									<a href="#" class="cardControls collapse"><span class="glyphicon glyphicon-resize-small"></span> Collapse</a>
+									<a href="#" class="cardControls tracking"><span class="glyphicon glyphicon-upload"></span> Tracking</a>
+									<h1>Mobile Tariff Expert</h1> 
+									<p class="subtitle">Find out if you are paying too much for your mobile, and do something about it.</p>									
+								</div>
+								<div class="body">
+									<div class="row">
+										<p class="instructions col-sm-6">Fill in your typical monthly usage and costs below or fill them automatically by clicking 'Get my data', then click 'Go'</p>
+									</div>
+									<div class="row">
+										<div class="col-sm-8 sharedData">
+											<h2 class="orange">Shared CTRLzone</h2>
+											<div class="row">
+												<div class="col-sm-2"><input id="usageForm1" class="form-control input-lg" type="text" placeholder="230"><label for="usageForm1">Minutes</label></div>
+												<div class="col-sm-2"><input id="usageForm2" class="form-control input-lg" type="text" placeholder="190"><label for="usageForm2">Texts</label></div>
+												<div class="col-sm-2"><input id="usageForm3" class="form-control input-lg" type="text" placeholder="580"><label for="usageForm3">Data (MB)</label></div>
+												<div class="col-sm-2"><input id="usageForm4" class="form-control input-lg" type="text" placeholder="&pound;45.00"><label for="usageForm4">Monthly Spend</label></div>
+												<div class="col-sm-4">
+													<a href="#" class="btn btn-default btn-lg btn-block">Get My Data</a>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-8">
+													<span class="selectIcon glyphicon glyphicon-plus"></span>
+													<select class="form-control">
+													  <option disabled selected>choose a phone model</option>
+													  <option>Phone Option 1</option>
+													  <option>Phone Option 2</option>
+													  <option>Phone Option 3</option>
+													  <option>Phone Option 4</option>
+													  <option>Phone Option 5</option>
+													</select>
+													<a href="#" class="btn btn-default hidden"><span class="glyphicon glyphicon-plus"></span> Add more usage details</a>
+
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 callOut">
+											<a href="#" class="btn btn-primary btn-lg btn-block">Go!</a>
+											<p>Find out how much you should be paying and what to do about it</p>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 card">
+								<div class="header">
+									<img src="http://lorempixel.com/60/60" alt="">
+									<a href="#" class="cardControls expand"><span class="glyphicon glyphicon-resize-full"></span> Expand</a>
+									<a href="#" class="cardControls collapse"><span class="glyphicon glyphicon-resize-small"></span> Collapse</a>
+									<a href="#" class="cardControls tracking"><span class="glyphicon glyphicon-upload"></span> Tracking</a>
+									<h1>Mobile Tariff Expert (Completed)</h1> 
+									<p class="subtitle">Find out if you are paying too much for your mobile, and do something about it.</p>									
+								</div>
+								<div class="body">
+									<div class="row">
+										<p class="instructions col-sm-6">Fill in your typical monthly usage and costs below or fill them automatically by clicking 'Get my data', then click 'Go'</p>
+									</div>
+									<div class="row">
+										<div class="col-sm-8 sharedData">
+											<h2 class="orange">Shared CTRLzone</h2>
+											<div class="row">
+												<div class="col-sm-2"><input id="usageForm1" class="form-control input-lg" type="text" placeholder="230"><label for="usageForm1">Minutes</label></div>
+												<div class="col-sm-2"><input id="usageForm2" class="form-control input-lg" type="text" placeholder="190"><label for="usageForm2">Texts</label></div>
+												<div class="col-sm-2"><input id="usageForm3" class="form-control input-lg" type="text" placeholder="580"><label for="usageForm3">Data (MB)</label></div>
+												<div class="col-sm-2"><input id="usageForm4" class="form-control input-lg" type="text" placeholder="&pound;45.00"><label for="usageForm4">Monthly Spend</label></div>
+												<div class="col-sm-4">
+													<a href="#" class="btn btn-default btn-lg btn-block">Get my data</a>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-8">
+													<span class="selectIcon glyphicon glyphicon-plus"></span>
+													<select class="form-control">
+													  <option selected>SIM only</option>
+													  <option>Phone Option 1</option>
+													  <option>Phone Option 2</option>
+													  <option>Phone Option 3</option>
+													  <option>Phone Option 4</option>
+													  <option>Phone Option 5</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 callOut">
+											<a href="#" class="btn btn-primary btn-lg btn-block">Update</a>
+											<p>You can change your options manually and refresh the results by clicking update.</p>	
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-8 bg-info resultSummary">
+											<h2>You could save at least &pound;360 in the next 12 months</h2>
+											<p>
+												You are currently spending on average &pound;45 a month; the best published tariff is &pound;15 a month<br>
+												Below are the options you can consider to optimise your savings
+
+											</p>
+
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 resultBlock bestTariffs">
+											<div class="row">
+												<div class="col-sm-10">
+													<span class="resultNumber">1</span>
+													<h3>Check out the best tariffs</h3>
+													<p>Let's start with the best match&hellip;</p>
+												</div>
+												<div class="col-sm-2 pull-right"><a href="#" class="btn btn-default btn-block viewMore">View More <span class="glyphicon glyphicon-chevron-down"></span></a></div>
+											</div>
+											<div class="additionalContent">
+												<table class="table">
+													<tbody>
+														<tr>
+															<td>
+																<img src="images/network-logos-ee.jpg" alt="">
+																<h4>Tesco pay monthly + Tesco Mobile SIM card</h4>
+																<p class="small"><a href="#"><span class="glyphicon glyphicon-info-sign"></span> View details</a></p>
+															</td>
+															<td>
+																<span class="figure">Unlimited</span> <span class="value">Minutes</span>
+															</td>
+															<td>
+																<span class="figure">Unlimited</span> <span class="value">Texts</span>
+															</td>
+															<td>
+																<span class="figure">1Gb</span> <span class="value">Data</span>
+															</td>
+															<td>
+																<span class="figure">&pound;15.00</span> <span class="value">Monthly Spend</span>
+															</td>
+															<td>
+																<span class="figure">12 Months</span> <span class="value">Contract Duration</span>
+															</td>
+															<td>
+																<a href="#" class="btn btn-default btn-lg btn-block">Buy</a>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<img src="images/network-logos-ee.jpg" alt="">
+																<h4>EE SIM Only</h4>
+																<p class="small"><a href="#"><span class="glyphicon glyphicon-info-sign"></span> View details</a></p>
+															</td>
+															<td>
+																<span class="figure">Unlimited</span> <span class="value">Minutes</span>
+															</td>
+															<td>
+																<span class="figure">Unlimited</span> <span class="value">Texts</span>
+															</td>
+															<td>
+																<span class="figure">1Gb</span> <span class="value">Data</span>
+															</td>
+															<td>
+																<span class="figure">&pound;15.00</span> <span class="value">Monthly Spend</span>
+															</td>
+															<td>
+																<span class="figure">12 Months</span> <span class="value">Contract Duration</span>
+															</td>
+															<td>
+																<a href="#" class="btn btn-default btn-lg btn-block">Buy</a>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<img src="images/network-logos-ee.jpg" alt="">
+																<h4>EE SIM Only</h4>
+																<p class="small"><a href="#"><span class="glyphicon glyphicon-info-sign"></span> View details</a></p>
+															</td>
+															<td>
+																<span class="figure">Unlimited</span> <span class="value">Minutes</span>
+															</td>
+															<td>
+																<span class="figure">Unlimited</span> <span class="value">Texts</span>
+															</td>
+															<td>
+																<span class="figure">1Gb</span> <span class="value">Data</span>
+															</td>
+															<td>
+																<span class="figure">&pound;15.00</span> <span class="value">Monthly Spend</span>
+															</td>
+															<td>
+																<span class="figure">12 Months</span> <span class="value">Contract Duration</span>
+															</td>
+															<td>
+																<a href="#" class="btn btn-default btn-lg btn-block">Buy</a>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<img src="images/network-logos-ee.jpg" alt="">
+																<h4>EE SIM Only</h4>
+																<p class="small"><a href="#"><span class="glyphicon glyphicon-info-sign"></span> View details</a></p>
+															</td>
+															<td>
+																<span class="figure">Unlimited</span> <span class="value">Minutes</span>
+															</td>
+															<td>
+																<span class="figure">Unlimited</span> <span class="value">Texts</span>
+															</td>
+															<td>
+																<span class="figure">1Gb</span> <span class="value">Data</span>
+															</td>
+															<td>
+																<span class="figure">&pound;15.00</span> <span class="value">Monthly Spend</span>
+															</td>
+															<td>
+																<span class="figure">12 Months</span> <span class="value">Contract Duration</span>
+															</td>
+															<td>
+																<a href="#" class="btn btn-default btn-lg btn-block">Buy</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="col-sm-12 resultBlock callNetwork">
+											<div class="row">
+												<div class="col-sm-10">
+													<span class="resultNumber">2</span>
+													<h3>Call your network and see if they will match the best tariff</h3>
+													<p>Some networks will make you offers they won't publish to stop you leaving.</p>
+												</div>
+												<div class="col-sm-2 pull-right"><a href="#" class="btn btn-default btn-block viewMore">View More <span class="glyphicon glyphicon-chevron-down"></span></a></div>
+											</div>
+											<div class="additionalContent">
+												<div class="row ">
+													<div class="col-sm-10">
+														<img src="images/network-logos-orange.jpg" alt="">
+														<h4>Orange (your current network)</h4>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-7">
+														<p>This is some content. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-12 resultBlock notReady">
+											<div class="row">
+												<div class="col-sm-10">
+													<span class="resultNumber">3</span>
+													<h3>Not ready to change? We can help you make the most of your current tariff</h3>
+													<p>Collect your phone usage data and we can show you how to make better use of it.</p>
+												</div>
+												<div class="col-sm-2 pull-right"><a href="#" class="btn btn-default btn-block viewMore">View More <span class="glyphicon glyphicon-chevron-down"></span></a></div>
+											</div>
+											<div class="additionalContent">
+												<div class="row">
+													<div class="col-sm-7">
+														<p>This is some content. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="row flip-container">
+							<div class="flipper">
+								<div class="col-sm-12 card small front">
+									<div class="header">
+										<img src="http://lorempixel.com/60/60" alt="">
+										<a href="#" class="cardControls expand"><span class="glyphicon glyphicon-resize-full"></span> Expand</a>
+										<a href="#" class="cardControls tracking"><span class="glyphicon glyphicon-upload"></span> Tracking</a>
+										<h1>Mobile Tariff Expert</h1> 
+										<p class="subtitle">Find out if you are paying too much for your mobile, and do something about it.</p>	
+									</div>
+								</div>
+								<div class="back col-sm-12 card small">
+									<h1>BUUUUUUNNNNNG!!!!</h1>
+								</div>
+							</div>
+						</div> -->
+
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="notifications" class="flyout">

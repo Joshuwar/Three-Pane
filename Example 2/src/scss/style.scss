@@ -27,20 +27,23 @@ $light-blue: #589fff;
 
 // Typography
 
-@import "typography/aleo"; // aleoregular, aleobold, aleolight, aleoitalic
+@import "typography/opensans"; 	// opensans-light, opensans-regular, opensans-lightitalic, opensans-italic
+@import "typography/aleo"; 		// aleolight 
 
-$font-regular:    		"Courier New";
-$font-bold:    			aleobold;
-$font-light:    		aleolight;
-$font-italic:    		italic;
+$font-regular:    		opensans-light;
+$font-bold:    			opensans-regular;
+$font-light:    		opensans-light;
+$font-italic:    		opensans-lightitalic;
+
+$header-font: 			aleolight;
 
 
 // font sizes and line-heights
 
 $body-size: 				16px;
-$body-line-height: 			24px;
+$body-line-height: 			26px;
 
-$small-body-size:			16px;
+$small-body-size:			14px;
 $small-body-line-height:	22px;
 
 $large-header-size:			50px;
@@ -52,8 +55,8 @@ $news-header-line-height:	40px;
 $med-header-size:			30px;
 $med-header-line-height:	35px;
 
-$small-header-size:			20px;
-$small-header-line-height:	22px;
+$small-header-size:			18px;
+$small-header-line-height:	26px;
 
 $nav-size:					15px;
 $nav-line-height:			15px;
@@ -90,7 +93,10 @@ p 				{ margin: 0 0 $body-line-height 0; }
 h1 				{ margin: 0 0 $body-line-height 0; }
 h2 				{ margin: 0 0 0 0; }
 h3, h4, h5, h6  { margin: 0 0 0 0; }
+h1, h2, h3, h4, 
+h5, h6  		{ font-family: $header-font; }
 
+.orange { color: $orange; }
 
 // Link Styles
 
@@ -98,7 +104,7 @@ a 	{
 	color: #a1a1a1; 
 	transition: opacity 0.5s ease;
 	&:hover { 
-		color: white; text-decoration: none; 
+		color: $dark-grey; text-decoration: none; 
 		border-bottom-color: $dark-blue;
 	}
 	&.headerLink {
@@ -119,7 +125,7 @@ a 	{
 	}
 	&.white {
 		&:hover {
-			color: $orange; // added for the news page- might create odd behaviours elsewhere
+			color: $orange; 
 		}
 	}
 }
@@ -130,27 +136,41 @@ html, body {
 }
 
 header { 
-	background-color: $light-grey;
+	background-color: $off-white;
+	box-shadow: 0 0px 2px 1px #666;
 	overflow: hidden;
+	position: relative;
+	z-index: 1;
 	nav ul {
 		margin: 0;
 		padding: 0 10px 0 0;
 		li {
+			font-size: $nav-size;
+			letter-spacing: $small-letter-spacing;
 			display: inline-block;
 			a {
 				white-space: nowrap;
-				padding: 5px 20px 6px;
+				padding: 7px 20px 4px;
 				display: block;
 			}
 		}
+	}
+}
+.logo {
+	padding: 10px 20px 9px;
+	float: left;
+	img {
+		width: 100px;
+		height: auto;
 	}
 }
 
 .viewContainer {
 	overflow:hidden;
 	width: 100%;
-	height: calc(100% - 35px);
+	height: calc(100% - 32px);
 	position: relative;
+	margin-top: -10px;
 	.slidingPanel {
 		transition: all 0.5s ease;
 		left: 0%;
@@ -158,18 +178,21 @@ header {
 		width: 300%;
 		height: 100%;
 		.viewPane {
-			overflow-y: scroll;
+			overflow-y: auto;
 			width: calc(100% / 3);
 			float: left;
 			height: 100%;
 			position: relative;
+			background: no-repeat center center fixed;
+			-webkit-background-size: cover;
 			.innerWrap {
-				padding: 10% 30%;
-				height: 150%;	
+				padding-top: 30px;
+				padding-bottom: 150px;
+
 			}
-			&.myData 		{ background-color: #eee;}
-			&.toolbox 		{ background-color: #dadada;}
-			&.notifications { background-color: #d3d3d3;}
+			&.myData 		{ background-image: url(../images/ctrlio-bg-1.png);}
+			&.toolbox 		{ background-image: url(../images/ctrlio-bg-2.jpg);}
+			&.notifications { background-image: url(../images/ctrlio-bg-3.jpg);}
 		}
 	}
 }
@@ -179,8 +202,8 @@ header {
 		// left: 0%;
 	}
 	a#myData { 
-		background-color: #555; 
-		color: white;
+		border-bottom: 5px solid $light-blue;
+		color: $light-blue;
 	}
 	nav#myData {
 		left: 100%;
@@ -192,8 +215,8 @@ header {
 		// left: -100%;
 	}
 	a#toolbox { 
-		background-color: #555; 
-		color: white;
+		border-bottom: 5px solid $orange;
+		color: $orange;
 	}
 	nav#toolbox {
 		left: 100%;
@@ -205,8 +228,8 @@ header {
 		// left: -200%;
 	}
 	a#notifications { 
-		background-color: #555; 
-		color: white;
+		border-bottom: 5px solid $green;
+		color: $green;
 	}
 	nav#notifications {
 		left: 100%;
@@ -261,7 +284,7 @@ li.iconLink {
 	font-size:0.9em;
 	position: relative;
 	span {
-		padding-top: 5px;
+		padding-top: 7px;
 	}
 	span.count {
 		padding: 0px;
@@ -304,6 +327,7 @@ div.contextualNavContainer {
 	&.closed {
 		left: calc(-100% + 39px);
 		a.hideNav {
+			color: $off-white;
 			transform: rotate(180deg);
 			-webkit-transform: rotate(180deg);
 		}
@@ -311,14 +335,18 @@ div.contextualNavContainer {
 	nav {
 		transition: all 0.8s ease;
 		position: absolute;
-		background-color: $dark-grey;
-		color: $light-grey;
-		padding: 20px;
+		background-color: $dark-blue;
+		box-shadow: 0 1px 2px 0px #666;
+		padding: 20px 40px 20px;
 		width: 100%;
 		left: 0%;
 		opacity: 0;
-		a { color: white; }
-		a:hover {color: white;}
+		a.btn { 
+			border: none;
+			background-color: transparent;
+			color: $off-white; 
+		}
+		a.btn:hover {color: $light-grey;}
 		a.hideNav {
 			transition: all 1s ease;
 			position: absolute;
@@ -326,7 +354,10 @@ div.contextualNavContainer {
 			-webkit-transform: rotate(0deg);
 			right: 5px;
 			padding: 10px;
-			top: 10px;
+			top: 14px;
+		}
+		a.hideNav:hover {
+			color: $off-white;
 		}
 	}
 }
@@ -352,5 +383,308 @@ div.contextualNavContainer {
 .overlayShown .toolsOverlay {
 	opacity: 1;
 	top: 0px;
+}
+
+// Cards - generic styles
+
+.card {
+	background-color: $off-white;
+	padding-top: 15px;
+	margin-bottom: 30px;
+	box-shadow: 0 6px 6px -6px #333;
+	.expand {
+		display: none;
+	}
+	.collapse {
+		display: block;
+	}
+	&.closed {
+		.header {
+			border-bottom: none;
+			.collapse {
+				display: none;
+			}
+			.expand {
+				display: block;
+			}
+		}
+		.body {
+			display: none;
+		}
+	}
+	&.small .header {
+		border-bottom: none;
+	}
+	.header {
+		border-bottom: 1px solid $light-grey;
+		overflow: hidden;
+		img { 
+			float:left; 
+			margin-right: 15px;
+			margin-bottom: 15px;
+			width: 60px;
+			height: 60px;
+			background-color: $light-grey;
+		}
+		h1 {
+			margin-bottom: 0;
+			color: $dark-blue; 
+		}
+		.subtitle {
+			margin-bottom: 0;
+		}
+		.cardControls {
+			font-size: 11px;
+			letter-spacing: $small-letter-spacing;
+			// background-color: $light-grey;
+			width: 70px;
+			//display: block;
+			text-align: right;
+			margin-left: 15px;
+			float: right;
+			span {
+				float: right;
+				font-size: 15px;
+				margin-left: 30px;
+				margin-right: 1px;
+			}
+		}
+	}
+	.resultSummary {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin: 15px 0;
+		h2 {
+			color: $dark-blue;
+			margin-bottom: 5px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.resultsHeading {
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.resultBlock {
+		margin-bottom: 15px;
+		padding-top: 15px;
+		.resultNumber {
+			font-size: 40px;
+			display: block;
+			width: 47px;
+			height: 47px;
+			text-align: center;
+			float: left;
+			background-color: $light-blue;
+			color: $off-white;
+			padding-top: 10px;
+			margin-right: 15px;
+		}
+		.table {
+			td {
+				padding: 15px 0px;
+			}
+			p {
+				margin-bottom: 0px;
+			}
+
+		}
+		p {
+			margin-bottom: 15px;
+		}
+		img {
+			float: left;
+			margin-right: 15px;
+			// margin-bottom: 15px;
+			width: 47px;
+			height: 47px;
+			background: $light-grey;
+		}
+		h4 {
+			margin-top: 5px;
+		}
+		.figure {
+			font-size: 18px;
+			font-family: $font-bold;
+			display: block;
+		}
+		.value {
+			font-size: 14px;
+			//margin-bottom: 15px;
+			display: block;
+		}
+		.singleResult.row {
+			clear: both;
+			border-bottom: 1px solid $white;
+			margin-bottom: 20px;
+		}
+		.btn {
+			//margin-bottom: 15px;
+			//border: none;
+		}
+		a.viewMore {
+			margin-top: 10px;
+		}
+	}
+	p.instructions {
+		font-size: $small-header-size;
+		line-height: $small-header-line-height;
+		margin: 15px 0 18px;
+	}
+	.sharedData {
+		// background-color: #d2dcfd;
+		border-top: 3px solid $orange;
+		border-right: 1px solid $orange;
+		border-bottom: 3px solid $orange;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		position: relative;
+		h2 {
+			margin-bottom: 15px;
+			font-size: $small-header-size;
+			// color: $orange;
+		}
+		input {
+			font-family: $font-bold;
+
+		}
+		label {
+			font-size: 12px;
+			letter-spacing: 0;
+			font-family: $font-bold;
+			margin-bottom: 15px;
+		}
+		.selectIcon {
+			position: absolute;
+			right: 22px;
+			top: 9px;
+
+		}
+		select {
+			-webkit-appearance: none;
+			box-shadow: none;
+			margin-bottom: 15px;
+		}
+		a.btn {
+			margin-bottom: 15px;
+		}
+	}
+	.callOut {
+		padding-top: 51px; // to fix: this isn't flexible JB
+		a.btn {
+			margin-bottom: 15px;
+		}
+		p {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+
+
+.resultBlock .additionalContent {
+	display:none;
+}
+
+.resultBlock.open .additionalContent {
+	display:block;
+}
+
+.notificationCard {
+	padding-bottom: 15px;
+	a.loadMore {
+		margin-top: 15px;
+	}
+}
+
+.notification {
+	border-bottom: 1px solid $light-grey;
+	padding: 15px 0px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #ccc;
+	}
+	h4 {
+		margin-bottom: 5px;
+	}
+	p {
+		margin-bottom: 0px;
+	}
+}
+
+
+// Bootstrap additional 
+
+.btn {
+	font-family: opensans-regular;
+}
+
+.bg-info {
+	color: white;
+}
+
+
+// Card flip styles
+
+/* entire container, keeps perspective */
+.flip-container {
+	-webkit-perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		-webkit-transform: rotateX(180deg);
+	}
+
+.flip-container {
+	margin-bottom: 30px;
+	//width: 100%;
+	//height: 100%;
+}
+
+.flipper {
+	height: 90px;
+}
+
+.front, .back {
+	//width: 100%;
+	//height: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.3s;
+	-webkit-transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	-webkit-transform: rotateX(180deg);
+}
+
+// iframe styles 
+
+.pio-iframe {
+	width: 100%;
+	height: 100%;
 }
 

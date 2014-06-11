@@ -560,7 +560,6 @@ div.contextualNavContainer {
 			position: absolute;
 			right: 22px;
 			top: 9px;
-
 		}
 		select {
 			-webkit-appearance: none;
@@ -686,5 +685,45 @@ div.contextualNavContainer {
 .pio-iframe {
 	width: 100%;
 	height: 100%;
+}
+
+.toolForms {
+	padding: 20px 0px 15px;
+	h3 {
+		color: $dark-blue;
+		font-size: $body-size;
+		float: left;
+		padding: 6px 10px 0px 0px;
+		margin-bottom: 27px;
+	}
+	a.useData {
+		//float: right;
+	}
+	form {
+		clear: both;
+	}
+	label {
+		font-size: $small-body-size;
+	}
+	label.control-label {
+		text-align: left;
+	}
+	label span {
+		display: none;
+	}
+	select {
+		-webkit-appearance: none;
+		box-shadow: none;
+		margin-bottom: 15px;
+	}
+	.selectIcon {
+		position: absolute;
+		right: 22px;
+		top: 9px;
+	}
+	hr {
+		border-top: 1px solid $light-grey;
+		clear: both;
+	}
 }
 

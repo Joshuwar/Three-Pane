@@ -4860,3 +4860,31 @@ div.contextualNavContainer {
 .pio-iframe {
   width: 100%;
   height: 100%; }
+
+.toolForms {
+  padding: 20px 0px 15px; }
+  .toolForms h3 {
+    color: #0c3265;
+    font-size: 16px;
+    float: left;
+    padding: 6px 10px 0px 0px;
+    margin-bottom: 27px; }
+  .toolForms form {
+    clear: both; }
+  .toolForms label {
+    font-size: 14px; }
+  .toolForms label.control-label {
+    text-align: left; }
+  .toolForms label span {
+    display: none; }
+  .toolForms select {
+    -webkit-appearance: none;
+    box-shadow: none;
+    margin-bottom: 15px; }
+  .toolForms .selectIcon {
+    position: absolute;
+    right: 22px;
+    top: 9px; }
+  .toolForms hr {
+    border-top: 1px solid #dadada;
+    clear: both; }

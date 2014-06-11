@@ -593,7 +593,10 @@ if ( window.jQuery || window.Zepto ) {
     }
   })( window.jQuery || window.Zepto )
 }
+
+
 jQuery(document).ready(function($) {
+
 
 	// controls which pane is visible
 	$('a.paneControl').click(function() {
@@ -640,4 +643,8 @@ jQuery(document).ready(function($) {
 			$('.wrap').attr('class', 'wrap slidePos-' + $(elem).data('navid'));
 		},
 	});
+
+	mySwipe.slide(2, 600);
+
+
 });

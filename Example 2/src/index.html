@@ -162,51 +162,46 @@
 								</div>
 								<div class="body">
 									<div class="row toolForms">
-										<div class="col-sm-4">
-
-											<h3>Enter monthly phone use, or</h3>
-											<a href="#" class="btn btn-default btn-sm useData">use my iPhone data</a>
-
-											<hr/>
-
+										<div class="col-sm-6 col-sm-offset-3">
+											<a href="#" class="btn btn-warning btn-md useData">use my mobile records</a>
+											<h3>or enter monthly phone use</h3>
 											<form class="form-horizontal" role="form">
 												<div class="form-group">
-													<label class="col-sm-3 control-label" for="usageForm1">Minutes <span>Required</span></label>
-													<div class="col-sm-9">
+													<label class="col-sm-3 control-label" for="usageForm1">Minutes <span class="error-message">Required</span></label>
+													<div class="col-sm-9"> <!-- add class has-error for validation -->
 														<input id="usageForm1" class="form-control input-lg" type="text" placeholder="e.g. 230" autofocus="autofocus">
+														<span class="error-message">Required field</span>
 													</div>
 												</div>
 												<div class="form-group">
 													<label class="col-sm-3 control-label" for="usageForm2">SMS <span>Required</span></label>
-													<div class="col-sm-9">
+													<div class="col-sm-9"> <!-- add class has-error for validation -->
 														<input id="usageForm2" class="form-control input-lg" type="text" placeholder="e.g. 230">
+														<span class="error-message">Required field</span>
 													</div>
 												</div>
 												<div class="form-group">
 													<label class="col-sm-3 control-label" for="usageForm3">Data MB <span>Required</span></label>
-													<div class="col-sm-9">
+													<div class="col-sm-9"> <!-- add class has-error for validation -->
 														<input id="usageForm3" class="form-control input-lg" type="text" placeholder="e.g. 1200">
+														<span class="error-message">Required field</span>
 													</div>
 												</div>
 											</form>
-										</div>
-										<div class="col-sm-4">
-											<h3>Enter monthly cost, or</h3>
-											<a href="#" class="btn btn-default btn-sm useData">use my bank data</a>
 											<hr/>
+											<a href="#" class="btn btn-warning btn-md useData">use my bank data</a>
+											<h3>or enter monthly cost</h3>
 											<form class="form-horizontal">
 												<div class="form-group">
 													<label class="col-sm-3 control-label" for="usageForm4">Cost</label>
-													<div class="col-sm-9">
+													<div class="col-sm-9"> <!-- add class has-error for validation -->
 														<input id="usageForm4" class="form-control input-lg" type="text" placeholder="e.g. &pound;45.00">
+														<span class="error-message">Required field</span>
 													</div>
 												</div>
 											</form>
-
-										</div>
-										<div class="col-sm-4">
-											<h3>Choose handset...</h3>
 											<hr/>
+											<h3>Choose a new handset</h3>
 											<div class="row">
 												<div class="col-sm-12">
 													<span class="selectIcon glyphicon glyphicon-chevron-down"></span>
@@ -221,7 +216,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-sm-12">
+										<div class="col-sm-6 col-sm-offset-3">
 											<hr/>
 											<a href="#" class="btn btn-primary btn-lg btn-block">Send the above data to Bill Monitor </a>
 										</div>

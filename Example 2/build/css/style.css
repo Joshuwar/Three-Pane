@@ -4865,16 +4865,17 @@ div.contextualNavContainer {
   padding: 20px 0px 15px; }
   .toolForms h3 {
     color: #0c3265;
-    font-size: 16px;
     float: left;
     padding: 6px 10px 0px 0px;
     margin-bottom: 27px; }
+  .toolForms a.useData {
+    float: left;
+    margin-top: 3px;
+    margin-right: 10px; }
   .toolForms form {
     clear: both; }
   .toolForms label {
     font-size: 14px; }
-  .toolForms label.control-label {
-    text-align: left; }
   .toolForms label span {
     display: none; }
   .toolForms select {
@@ -4884,7 +4885,16 @@ div.contextualNavContainer {
   .toolForms .selectIcon {
     position: absolute;
     right: 22px;
-    top: 9px; }
+    top: 11px; }
   .toolForms hr {
     border-top: 1px solid #dadada;
     clear: both; }
+  .toolForms span.error-message {
+    display: none; }
+  .toolForms .has-error span.error-message {
+    color: #a94442;
+    display: block;
+    position: absolute;
+    right: -110px;
+    top: 10px;
+    font-family: opensans-regular; }

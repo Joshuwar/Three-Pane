@@ -691,13 +691,14 @@ div.contextualNavContainer {
 	padding: 20px 0px 15px;
 	h3 {
 		color: $dark-blue;
-		font-size: $body-size;
 		float: left;
 		padding: 6px 10px 0px 0px;
 		margin-bottom: 27px;
 	}
 	a.useData {
-		//float: right;
+		float: left;
+		margin-top: 3px;
+		margin-right: 10px;
 	}
 	form {
 		clear: both;
@@ -706,7 +707,7 @@ div.contextualNavContainer {
 		font-size: $small-body-size;
 	}
 	label.control-label {
-		text-align: left;
+		//text-align: left;
 	}
 	label span {
 		display: none;
@@ -719,11 +720,22 @@ div.contextualNavContainer {
 	.selectIcon {
 		position: absolute;
 		right: 22px;
-		top: 9px;
+		top: 11px;
 	}
 	hr {
 		border-top: 1px solid $light-grey;
 		clear: both;
+	}
+	span.error-message {
+		display: none;
+	}
+	.has-error span.error-message {
+		color: #a94442;
+		display: block;
+		position: absolute;
+		right: -110px;
+		top: 10px;
+		font-family: $font-bold;
 	}
 }
 
